@@ -1,1 +1,1 @@
-# kot.shrodingera.github.io
+# kot-shrodingera.github.io
