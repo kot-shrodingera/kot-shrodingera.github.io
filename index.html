@@ -80,12 +80,12 @@
         <div class="top-bar-logo">
           <svg class="icon-logo"><use xlink:href="#icon-logo"></use></svg>СТОМАСТОМ
         </div>
-        <ul class="top-bar-menu">
-          <li>Услуги</li>
-          <li>Принципы</li>
-          <li>Врачи</li>
-          <li>Отзывы</li>
-          <li>Контакты</li>
+        <ul class="top-bar-menu flex-container"> <!-- flex-container for removing spaces -->
+          <li><a href="#services">Услуги</a></li>
+          <li><a href="#principles">Принципы</a></li>
+          <li><a href="#doctors">Врачи</a></li>
+          <li><a href="#comments">Отзывы</a></li>
+          <li><a href="#contacts">Контакты</a></li>
         </ul>
         <div class="top-bar-phone">8 (843) <b>514-74-53</b><br><div class="callback">Обратный звонок</div></div>
       </div>
@@ -98,7 +98,7 @@
 
   </header>
 
-  <ul class="price-menu flex-container">
+  <ul id="services" class="price-menu flex-container">
     <li class="active">Терапия</li>
     <li class="">Протезирование</li>
     <li class="">Имплантология</li>
@@ -1623,7 +1623,7 @@
     </div>
   </section>
 
-  <section class="principles">
+  <section id="principles" class="principles">
     <div class="flex-container">
       <div class="principles-header flex-item col-4 flex-container">
         <div>5</div>
@@ -1652,7 +1652,7 @@
     </div>
   </section>
 
-  <section class="doctors">
+  <section id="doctors" class="doctors">
     <div class="flex-container">
       <div class="doctors-list flex-item col-4">
         <h1>Наши доктора</h1>
@@ -1702,7 +1702,7 @@
     </div>
   </section>
 
-  <section class="comments">
+  <section id="comments" class="comments">
     <div class="comments-content">
       <h2>Отзывы клиентов</h2>
       <div class="comments-block owl-carousel owl-theme">
@@ -1739,7 +1739,7 @@
     </div>
   </section>
 
-  <footer>
+  <footer id="contacts">
     <div class="flex-container">
       <div class="footer-logo flex-item col-4">
         <svg class="icon-logo"><use xlink:href="#icon-logo"></use></svg>СТОМАСТОМ
@@ -1763,7 +1763,8 @@
 
 <script src="js/jquery-3.2.1.min.js"></script>
 
-<script src="modules/materialize/js/materialize.min.js"></script>
+<script src="js/jquery.scrollTo.min.js"></script>
+<script src="js/jquery.localScroll.min.js"></script>
 <script src="modules/owl-carousel2-2.2.1/dist/owl.carousel.js"></script>
 <script src="js/custom.js"></script>
 

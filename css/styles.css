@@ -1,6 +1,6 @@
 /* Fonts */
 
-@import url(https://fonts.googleapis.com/css?family=Roboto:300,400,500, 700);
+@import url(https://fonts.googleapis.com/css?family=Roboto:300,400,500,700);
 
 @font-face {
   font-family: "Geometria Medium";
@@ -53,6 +53,7 @@ ul {
 
 a {
   text-decoration: none;
+  color: inherit;
 }
 
 p {
@@ -66,8 +67,12 @@ svg {
 
 button {
   border: 0;
-  font: inherit; /* нужно ли? */
+  font: inherit;
   background: #fff;
+}
+
+button:focus {
+  outline: none;
 }
 
 h1,
@@ -124,7 +129,6 @@ header {
 }
 
 .top-bar-menu li {
-  display: inline-block;
   margin-right: 30px;
 }
 
@@ -151,7 +155,7 @@ header {
 }
 
 .intro h1 {
-  font: 900 5rem/4rem "Geometria Heavy", sans-serif;
+  font: 900 5rem/1 "Geometria Heavy", sans-serif;
   text-transform: uppercase;
   width: 500px;
   margin-top: 150px;
@@ -164,7 +168,7 @@ header {
 }
 
 .intro button {
-  font-weight: 400;
+  font-weight: 500;
   color: #0561a4;
   margin-top: 50px;
   border-radius: 1.5em;
@@ -274,7 +278,7 @@ header {
   background-color: #e4eef4;
 }
 
-.option-list.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+.option-list.owl-theme .owl-dots .owl-dot.active span, .option-list.owl-theme .owl-dots .owl-dot:hover span {
   background-color: #0561a4;
 }
 
@@ -310,7 +314,7 @@ header {
 .news button {
   margin-top: 70px;
   margin-right: 20px;
-  font-weight: 400;
+  font-weight: 500;
   color: #0561a4;
   border-radius: 1.5em;
   padding: 1em 1.5em;
@@ -431,7 +435,7 @@ header {
   cursor: pointer;
 }
 
-.doctors-list li.active, li:hover {
+.doctors-list li.active, .doctors-list li:hover {
   color: #0561a4;
 }
 
@@ -454,18 +458,14 @@ header {
 .doctor-photo-container {
   position: absolute;
   bottom: 0;
-  margin: 0 auto;
   left: 0;
-  right: 10%;
-  width: 100%;
-  height: 660px;
   z-index: 0;
 }
 
 .doctor-photo {
   background: url(../images/doc-bg-2.png) center bottom no-repeat;
   height: 660px;
-  /*width: 100%;*/
+  margin-right: 10%;
 }
 
 .doctor-description {
@@ -539,6 +539,7 @@ header {
 .comment {
   padding: 20px 40px 0 10px;
   background: url(../svg/quote.svg) no-repeat;
+  line-height: 2.3rem;
 }
 
 .comment-author {
@@ -561,7 +562,7 @@ header {
   background-color: #1172b9;
 }
 
-.comments-block.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+.comments-block.owl-theme .owl-dots .owl-dot.active span, .comments-block.owl-theme .owl-dots .owl-dot:hover span {
   background-color: #e4eef4;
 }
 
