@@ -1,6 +1,6 @@
 /* Fonts */
 
-@import url(http://fonts.googleapis.com/css?family=Roboto:300,400,700|Raleway:500,600,700);
+@import url(https://fonts.googleapis.com/css?family=Roboto:300,400,500, 700);
 
 @font-face {
   font-family: "Geometria Medium";
@@ -438,6 +438,7 @@ header {
 .doctors-list li div {
   flex-grow: 1;
   margin-left: 25px;
+  font-weight: 400;
 }
 
 .doctors-list li h5 {
@@ -521,7 +522,7 @@ header {
 }
 
 .comments-content {
-  margin: 125px auto 210px;
+  margin: 125px auto 110px;
   width: 1170px;
   padding: 0 15px;
 }
@@ -543,6 +544,25 @@ header {
 .comment-author {
   margin-top: 25px;
   font-weight: 500;
+}
+
+/* Owl Carousel styles */
+
+.comments-block.owl-theme .owl-nav.disabled+.owl-dots {
+  line-height: 0;
+  margin-top: 90px;
+}
+
+.comments-block.owl-theme .owl-dots .owl-dot span {
+  margin: 0 16px 0 0;
+}
+
+.comments-block.owl-theme .owl-dots .owl-dot span {
+  background-color: #1172b9;
+}
+
+.comments-block.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+  background-color: #e4eef4;
 }
 
 
