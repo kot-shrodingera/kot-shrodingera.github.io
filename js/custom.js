@@ -45,6 +45,8 @@
   }
 
   function transitionDirectionCheck(event) {
+    if ($(this).hasClass("active"))
+      return
     var owlCarousel = event.data.owlCarousel;
     var menu = event.data.menu;
     menu.off();
