@@ -252,13 +252,14 @@ header {
   height: 16px;
   margin-left: 5px;
   color: #0561a4;
+  vertical-align: baseline;
 }
 
 .option-line .dots {
   flex-grow: 1;
   background-image: linear-gradient(to right, #000 6.25%, transparent 6.25%);
   background-size: 10px 1px;
-  background-position: bottom;
+  background-position: center bottom 1px;
   background-repeat: repeat-x;
   margin-right: 10px;
 }
