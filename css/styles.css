@@ -308,18 +308,18 @@ header {
 
 .news h2 {
   font: 800 3rem/1 "Geometria ExtraBold", sans-serif;
-  margin-top: 75px;
+  margin-top: 65px;
   text-transform: uppercase;
   letter-spacing: 0.06em;
 }
 
 .news-decription {
-  line-height: 2rem;
+  line-height: 2.3rem;
   margin-top: 20px;
 }
 
 .news button {
-  margin-top: 70px;
+  margin-top: 60px;
   margin-right: 20px;
   font-weight: 500;
   color: #0561a4;
