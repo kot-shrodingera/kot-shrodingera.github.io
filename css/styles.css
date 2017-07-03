@@ -189,11 +189,13 @@ header {
   font-weight: 400;
   margin-top: 130px;
   flex-flow: row;
+  justify-content: flex-start;
 }
 
 .price-menu li {
   padding-bottom: 4px;
   cursor: pointer;
+  margin-right: 45px;
 }
 
 .price-menu li:hover {
