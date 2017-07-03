@@ -92,7 +92,9 @@ h6 {
 
 header {
   min-width: 1170px;
-  background: url("../images/header-bg.png") center top no-repeat;
+  background: url("../images/dude.png") 75% bottom no-repeat,
+              url("../images/bg.jpg") center top no-repeat;
+  background-size: initial, cover;
   height: 725px; /* temp */
 }
 
