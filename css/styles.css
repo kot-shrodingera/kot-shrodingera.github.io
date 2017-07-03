@@ -111,6 +111,7 @@ header {
   font: 500 2rem/2.2rem "Geometria Medium", sans-serif;
   float: left;
   margin-right: 60px;
+  letter-spacing: 0.04em;
 }
 
 .top-bar-logo svg {
@@ -155,6 +156,7 @@ header {
   text-transform: uppercase;
   width: 500px;
   margin-top: 150px;
+  letter-spacing: 0.06em;
 }
 
 .intro .description {
@@ -226,6 +228,7 @@ header {
   font: 800 1.8rem/1 "Geometria ExtraBold", sans-serif;
   margin-bottom: 45px;
   text-transform: uppercase;
+  letter-spacing: 0.01em;
 }
 
 .option-line {
@@ -300,6 +303,8 @@ header {
 .news h2 {
   font: 800 3rem/1 "Geometria ExtraBold", sans-serif;
   margin-top: 75px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
 }
 
 .news-decription {
@@ -372,6 +377,7 @@ header {
 
 .principles .principles-header div:last-child {
   line-height: 3.2rem;
+  letter-spacing: 0.01em;
 }
 
 .principle.flex-container {
@@ -397,6 +403,7 @@ header {
   font: 800 1.8rem/1 "Geometria ExtraBold", sans-serif;
   margin-bottom: 15px;
   text-transform: uppercase;
+  letter-spacing: 0.01em;
 }
 
 
@@ -420,6 +427,7 @@ header {
 .doctors-list h1 {
   font: 800 2.8rem/1 "Geometria ExtraBold", sans-serif;
   text-transform: uppercase;
+  letter-spacing: 0.01em;
 }
 
 .doctors-list ul {
@@ -439,12 +447,14 @@ header {
   flex-grow: 1;
   margin-left: 25px;
   font-weight: 400;
+  font-size: 1.4rem;
 }
 
 .doctors-list li h5 {
   font: 700 1.5rem/1rem "Geometria Bold", sans-serif;
   text-transform: uppercase;
   margin: 5px 0 10px;
+  letter-spacing: 0.01em;
 }
 
 .doctor-section {
@@ -473,6 +483,7 @@ header {
 .doctor-description h3 {
   font: 800 1.8rem/1 "Geometria ExtraBold", sans-serif;
   text-transform: uppercase;
+  letter-spacing: 0.01em;
 }
 
 .doctor-scpec {
@@ -526,6 +537,7 @@ header {
 .comments-content h2 {
   font: 800 2.8rem/1 "Geometria ExtraBold", sans-serif;
   text-transform: uppercase;
+  letter-spacing: 0.01em;
 }
 
 .comments-section {
@@ -589,6 +601,7 @@ footer svg {
 
 .footer-logo {
   font: 500 2rem/2.2rem "Geometria Medium", sans-serif;
+  letter-spacing: 0.04em;
 }
 
 .footer-logo svg {
