@@ -92,11 +92,8 @@ h6 {
 
 header {
   min-width: 1170px;
-  background-image: url("../images/dude.png"),
-                    url("../images/bg.jpg");
-  background-position: calc(50% + 200px) bottom, center top;
-  background-repeat: no-repeat;
-  background-size: auto, cover;
+  background: url("../images/bg.jpg") center top no-repeat;
+  background-size: cover;
   height: 725px; /* temp */
 }
 
@@ -104,6 +101,7 @@ header {
   width: 1170px;
   margin: 0 auto;
   padding: 0 15px;
+  background: url("../images/dude.png") 80% bottom no-repeat;
 }
 
 .top-bar {
@@ -172,7 +170,7 @@ header {
 .intro button {
   font-weight: 500;
   color: #0561a4;
-  margin-top: 50px;
+  margin: 50px 0 160px; 
   border-radius: 1.5em;
   padding: 1em 3em;
 }
@@ -273,7 +271,7 @@ header {
 
 .option-list.owl-theme .owl-nav.disabled+.owl-dots {
   line-height: 0;
-  margin-top: 40px;
+  margin-top: 45px;
   text-align: left;
 }
 
@@ -367,7 +365,7 @@ header {
 
 .principles > .flex-container {
   width: 1170px;
-  margin: 110px auto 80px;
+  margin: 100px auto;
 }
 
 .principles .principles-header {
@@ -375,7 +373,7 @@ header {
   color: #0561a4;
   text-transform: uppercase;
   flex-wrap: nowrap;
-  padding-top: 12px
+  padding-top: 17px;
 }
 
 .principles .principles-header div:first-child {
@@ -391,7 +389,7 @@ header {
 
 .principle.flex-container {
   flex-wrap: nowrap;
-  padding: 25px 15px 0;
+  padding: 30px 15px 0;
   margin-bottom: 30px;
 }
 
@@ -425,7 +423,7 @@ header {
 }
 
 .doctors > .flex-container {
-  margin: 125px auto;
+  margin: 130px auto 85px;
   width: 1170px;
 }
 
@@ -444,8 +442,9 @@ header {
 }
 
 .doctors-list li {
-  margin-bottom: 30px;
+  margin-bottom: 26px;
   cursor: pointer;
+  align-items: center;
 }
 
 .doctors-list li.active, .doctors-list li:hover {
@@ -460,9 +459,9 @@ header {
 }
 
 .doctors-list li h5 {
-  font: 700 1.5rem/1rem "Geometria Bold", sans-serif;
+  font: 700 1.5rem/1 "Geometria Bold", sans-serif;
   text-transform: uppercase;
-  margin: 5px 0 10px;
+  margin-bottom: 10px;
   letter-spacing: 0.01em;
 }
 
@@ -538,7 +537,7 @@ header {
 }
 
 .comments-content {
-  margin: 125px auto 110px;
+  margin: 130px auto 110px;
   width: 1170px;
   padding: 0 15px;
 }
@@ -595,6 +594,7 @@ footer > .flex-container {
   width: 1170px;
   margin: 95px auto;
   align-items: center;
+  justify-content: flex-end;
 }
 
 footer > .flex-container b {
@@ -611,6 +611,7 @@ footer svg {
 .footer-logo {
   font: 500 2rem/2.2rem "Geometria Medium", sans-serif;
   letter-spacing: 0.04em;
+  margin-right: auto;
 }
 
 .footer-logo svg {
