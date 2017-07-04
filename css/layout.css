@@ -1,6 +1,7 @@
 .flex-container-column {
   display: flex;
   flex-flow: column nowrap;
+  min-width: 1170px;
 }
 
 .flex-container {
