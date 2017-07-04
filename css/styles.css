@@ -232,7 +232,7 @@ header {
 
 .option-section h3 {
   font: 800 1.8rem/1 "Geometria ExtraBold", sans-serif;
-  margin-bottom: 41px;
+  margin-bottom: 33px;
   text-transform: uppercase;
   letter-spacing: 0.01em;
 }
@@ -240,7 +240,8 @@ header {
 .option-line {
   display: flex;
   flex-flow: row;
-  margin-top: 20px;
+  line-height: 2.2rem;
+  margin-top: 15px;
 }
 
 .option-name {
@@ -250,7 +251,7 @@ header {
 .option-name svg {
   width: 16px;
   height: 16px;
-  margin-left: 5px;
+  margin-left: 10px;
   color: #0561a4;
   vertical-align: baseline;
 }
@@ -259,13 +260,13 @@ header {
   flex-grow: 1;
   background-image: linear-gradient(to right, #000 6.25%, transparent 6.25%);
   background-size: 10px 1px;
-  background-position: center bottom 1px;
+  background-position: center bottom 4px;
   background-repeat: repeat-x;
   margin-right: 10px;
 }
 
 .option-price {
-  font: 700 1.8rem/1.6rem "Roboto", sans-serif;
+  font: 700 1.8rem/2.2rem "Roboto", sans-serif;
 }
 
 /* Owl Carousel styles */
@@ -374,17 +375,18 @@ header {
   color: #0561a4;
   text-transform: uppercase;
   flex-wrap: nowrap;
-  align-items: center;
+  padding-top: 12px
 }
 
 .principles .principles-header div:first-child {
   font-size: 18rem;
-  line-height: 15rem;
+  line-height: 11.3rem; /* top align workaround */
 }
 
 .principles .principles-header div:last-child {
   line-height: 3.2rem;
   letter-spacing: 0.01em;
+  padding: 10px 0 0 10px;
 }
 
 .principle.flex-container {
