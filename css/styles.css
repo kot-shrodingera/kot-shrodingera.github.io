@@ -533,6 +533,7 @@ header {
 /* Comments */
 
 .comments {
+  min-width: 1170px;
   background: #0561a4;
 }
 
