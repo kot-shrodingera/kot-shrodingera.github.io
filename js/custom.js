@@ -18,6 +18,7 @@
   var doctorMenu = $(".doctors-list li");
 
   priceMenu.click(function() {
+    console.log("click 1");
     $(this).off();
     $(this).siblings().removeClass("active");
     $(this).addClass("active");
@@ -32,6 +33,7 @@
   })
 
   function reEnableAnimation(event) {
+    console.log("reenable");
     var owlCarousel = event.data.owlCarousel;
     if (owlCarousel == owlPrice) {
       var menu = priceMenu;
