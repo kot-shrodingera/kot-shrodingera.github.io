@@ -390,7 +390,7 @@ header {
 
 .principles .principles-header div:first-child {
   font-size: 18rem;
-  line-height: 11.3rem; /* top align workaround */
+  line-height: 0.62777778em; /* top align workaround */
 }
 
 .principles .principles-header div:last-child {
