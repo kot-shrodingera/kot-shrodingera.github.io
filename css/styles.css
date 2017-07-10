@@ -391,6 +391,7 @@ header {
 .principles .principles-header div:first-child {
   font-size: 18rem;
   line-height: 0.62777778em; /* top align workaround */
+  min-width: 105px;
 }
 
 .principles .principles-header div:last-child {
