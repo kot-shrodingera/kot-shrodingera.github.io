@@ -1,0 +1,505 @@
+@font-face {
+  font-family: "Geometria Medium";
+  src: url(../fonts/Geometria-Medium.otf);
+}
+
+@font-face {
+  font-family: "Geometria Bold";
+  src: url(../fonts/Geometria-Bold.otf);
+}
+
+@font-face {
+  font-family: "Geometria ExtraBold";
+  src: url(../fonts/Geometria-ExtraBold.otf);
+}
+
+/* Global and resets */
+
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;     /* 1rem = 10px */
+}
+
+body {
+  color: #000;
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+p {
+  margin: 0;
+}
+
+svg {
+  fill: currentColor;
+  vertical-align: top;
+  width: 100%;
+  height: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0
+}
+
+
+
+/* Site Styles */
+
+body {
+  font: 400 1.6rem/1 "Lato", sans-serif;
+}
+
+li {
+  background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAGCAIAAABvrngfAAABG2lUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4KPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iWE1QIENvcmUgNS41LjAiPgogPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4KICA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIi8+CiA8L3JkZjpSREY+CjwveDp4bXBtZXRhPgo8P3hwYWNrZXQgZW5kPSJyIj8+Gkqr6gAAAYJpQ0NQc1JHQiBJRUM2MTk2Ni0yLjEAACiRdZHPK0RRFMc/3mD8GFEsLCxewmpGgxIbi5n8KizGKL82M897M2pmvN4bSbbKVlFi49eCv4CtslaKSEnZWRMbpuc8MzWSObd77ud+7zmne88FJZrS0nZ5ENKZrBUZDqnTM7Oq95lqFLyUURnTbHN8cihKSfu4kzixm4Bbq3Tcv1a7oNsalFUJD2imlRUeER5byZoubws3acnYgvCpsN+SCwrfuno8zy8uJ/L85bIVjYRBaRBWE784/ou1pJUWlpfTlk4ta4X7uC/x6ZmpSVlbZbZgE2GYECqjDBKmly76xfcSoJtO2VEiP/iTP8GS5GriTVaxWCRBkix+UZelui6rIbouI8Wq2/+/fbWNnu58dV8IKp4c560dvFuQ23Scz0PHyR2B5xEuMsX8pQPoexd9s6i17UP9OpxdFrX4DpxvQPODGbNiP5JHpmIY8HoCdTPQeA01c/meFc45vofomnzVFezuQYfE189/A7/gZ5oDqXb/AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAFElEQVQImWM0zN/KgAqYGDAANYUAl8oBYWdpWCgAAAAASUVORK5CYII=') left center no-repeat;
+  padding-left: 2rem;
+}
+
+button {
+  border: 0;
+  font: 700 1.8rem/1 "Lato", sans-serif;
+  background: #0ab35b;
+  color: #fff;
+  padding: 1em 2em;
+  box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, .15);
+}
+
+section {
+  background: #eaeaea;
+}
+
+h1 {
+  font: 800 4.6rem/1 "Geometria ExtraBold", sans-serif;
+}
+
+h2 {
+  font: 700 4rem/1 "Geometria Bold", sans-serif;
+}
+
+h3 {
+  font: 700 2rem/1 "Geometria Bold", sans-serif;
+}
+
+.content {
+  width: 1170px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+
+
+/* Main Styles */
+
+header {
+  /*min-width: 1170px;*/
+  background: #fff;
+  background: linear-gradient(180deg, #fff, #eaeaea);
+}
+
+header .content {
+  padding: 45px 15px 35px;
+}
+
+
+
+header .top-bar {
+  justify-content: flex-start;
+  margin-bottom: 170px;
+}
+
+header .top-bar .logo {
+  font: 800 2rem/1 "Geometria ExtraBold", sans-serif;
+}
+
+header .top-bar nav {
+  line-height: 2rem;
+  margin: 0 -17.5px 0 37.5px;
+}
+
+header .top-bar nav > div {
+  margin: 0 17.5px
+}
+
+header .top-bar .contacts {
+  margin-left: auto;
+  text-align: right;
+}
+
+header .top-bar .phone {
+  font: 400 1.8rem/2rem "Lato", sans-serif;
+  margin-bottom: 18px;
+}
+
+header .top-bar .phone b {
+  font-weight: 900;
+}
+
+header .top-bar .address {
+  border-bottom: 1px solid #000;
+}
+
+
+
+header .intro .text {
+  width: 50%;
+}
+
+header .intro .gost {
+  margin-left: -1px; /* hor-align kostyl */
+}
+
+header .intro h1 {
+  margin: 25px 0 40px;
+  margin-left: -3px; /* hor-align kostyl */
+}
+
+header .intro ul {
+  margin: -10px 0 0;
+}
+
+header .intro ul li {
+  margin: 10px 0;
+  font-size: 1.8rem;
+}
+
+header .intro button {
+  margin-top: auto;
+}
+
+header .intro .image {
+  width: 50%;
+  box-shadow: 11px 11px 22px 0px rgba(0, 0, 0, .25);
+}
+
+
+/* FAQ */
+
+#faq {
+  padding: 175px 0 125px;
+}
+
+.faq {
+  background: #fff;
+  width: 1140px;
+  box-shadow: -100px 0 0 -85px #316fb5, 4px 4px 10px 0px rgba(0, 0, 0, .15);
+  padding: 80px 80px 50px;
+}
+
+.faq h2 {
+  margin: 0 0 65px -2px; /* hor-align kostyl */
+}
+
+.faq .questions {
+  margin: -20px 0;
+}
+
+.faq .question {
+  flex-basis: calc(50% - 15px);
+  margin: 20px 0;
+  line-height: 2rem;
+}
+
+.faq .question h3 {
+  margin-bottom: 30px;
+}
+
+.faq .question li {
+  margin-top: 20px;
+  background-position: left 8px;
+}
+
+.faq .gost-links {
+  margin: auto 0 0;
+  color: #316fb5;
+  text-decoration: underline;
+  flex-wrap: nowrap;
+}
+
+.faq .blue-thing {
+  background: url("../images/blue-thing.png");
+  width: 26px;
+  height: 107px;
+  flex-shrink: 0;
+}
+
+.faq .gost-links .links {
+  padding: 5px 0 5px 15px;
+  margin: -17px 0;
+}
+
+.faq .gost-links .links a {
+  display: block;
+  margin: 17px 0;
+}
+
+/* Catalog */
+
+#catalog {
+  padding: 125px 0;
+}
+
+.catalog .top-bar h2 {
+  margin: 0 auto 0 -3px; /* hor-align kostyl */
+}
+
+.catalog .top-bar a {
+  align-self: center;
+  margin-right: 50px;
+  border-bottom: 1px solid #000;
+}
+
+.catalog .items {
+  margin-top: 110px;
+}
+
+.catalog .item.big {
+  width: 50%;
+  margin-bottom: 125px;
+}
+
+.catalog .item.little {
+  width: 33.33333333%;
+}
+
+.catalog .item img {
+  box-shadow: 3px 3px 10px 0px rgba(0, 0, 0, .15);
+}
+
+.catalog .item.little img[src="images/item-la.jpg"] {
+  margin-bottom: 14px;
+}
+
+.catalog .item h3 {
+  margin: 50px 0 20px;
+}
+
+.catalog .item p {
+  margin-top: 15px;
+}
+
+
+
+/* Order */
+
+#order {
+  padding: 225px 0 250px;
+  background: linear-gradient(to right bottom, #d2d2d2, #e2e2e2);
+}
+
+.order .steps {
+  margin-top: 100px;
+}
+
+.order .step {
+  width: 33.33333333%;
+  flex-wrap: nowrap;
+}
+
+.order .step .icon {
+  padding-right: 30px;
+  flex-shrink: 0;
+}
+
+.order .step .icon img {
+  box-shadow: 3px 3px 10px 0px rgba(0, 0, 0, .15);
+}
+
+.order .step .text {
+  padding-right: 65px;
+}
+
+.order .step h3 {
+  margin-bottom: 25px;
+}
+
+.order .step .dash {
+  float: left;
+  margin-top: 23px;
+}
+
+.order .step .dash:first-of-type {
+  margin-top: 3px;
+}
+
+.order .step .desc {
+  padding-left: 19px;
+  margin-top: 20px;
+  line-height: 2.4rem;
+}
+
+.order .step .desc .phone {
+  font-weight: 700;
+}
+
+
+
+/* Serts */
+
+#serts {
+  padding: 250px 0;
+}
+
+.serts {
+  margin: 0 -17.5px 0 0;
+  flex-wrap: nowrap;
+}
+
+.serts h2 {
+  margin-bottom: 40px;
+}
+
+.serts .gost-links {
+  margin: auto 0 0;
+  color: #316fb5;
+  text-decoration: underline;
+  flex-wrap: nowrap;
+}
+
+.serts .blue-thing {
+  background: url("../images/blue-thing2.png");
+  width: 26px;
+  height: 90px;
+  flex-shrink: 0;
+}
+
+.serts .gost-links .links {
+  padding: 5px 0 5px 15px;
+  margin: -16px 0;
+  flex-grow: 1;
+}
+
+.serts .gost-links .links a {
+  display: block;
+  margin: 16px 0;
+}
+
+.serts img {
+  margin: 0 17.5px 0;
+  box-shadow: 4px 4px 10px 0 rgba(0, 0, 0, .15);
+}
+
+
+
+/* Comments */
+
+#comments {
+  padding: 200px 0;
+  background: #316fb5;
+  color: #fff;
+}
+
+#comments h2 {
+  margin-left: -2px; /* hor-align kostyl */
+}
+
+.comments {
+  margin: 60px 0 -30px;
+}
+
+.comments .comment {
+  width: 50%;
+  margin: 30px 0;
+}
+
+.comments .heading {
+  margin-bottom: 30px;
+}
+
+.comments .author {
+  flex-grow: 1;
+  padding-left: 20px;
+}
+
+.comments .name {
+  font: 500 1.8rem/1 "Geometria Medium", sans-serif;
+  margin: 10px 0;
+}
+
+.comments .company {
+  font-size: 1.4rem;
+}
+
+.comments .company a {
+  border-bottom: 1px solid #fff;
+}
+
+.comments .text {
+  padding-right: 70px;
+  line-height: 2.4rem;
+}
+
+
+
+/* Footer */
+
+footer {
+  background: #171717;
+  padding: 135px 0;
+  color: #9e9e9e;
+}
+
+footer .content .fc > div {
+  width: calc(100% * 1/3 - 20px);
+}
+
+footer .logo {
+  font: 700 2rem/1 "Geometria Bold", sans-serif;
+  margin-bottom: 15px;
+  height: 31px;
+}
+
+footer .logo + p {
+  font-size: 1.4rem;
+  line-height: 2.2rem
+  margin-bottom: 30px;
+}
+
+footer p {
+  margin: 10px 0;
+  line-height: 2.4rem;
+}
+
+footer a {
+  border-bottom: 1px solid #9e9e9e;
+}
+
+footer .digest {
+  color: #fff;
+}
+
+footer div.digest {
+  border: 1px dashed #fff;
+  text-align: center;
+  line-height: 53px;
+  font-weight: 600;
+  margin: 25px 0 48px;
+}
+
+footer .copyright {
+  font-size: 1.4rem;
+  line-height: 2.2rem;
+}

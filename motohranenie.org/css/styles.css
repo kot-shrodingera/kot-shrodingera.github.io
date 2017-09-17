@@ -1,0 +1,194 @@
+/* Global and resets */
+
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;     /* 1rem = 10px */
+}
+
+body {
+  color: #fff;
+  margin: 0;
+  font: 400 1.6rem/1 "Roboto", sans-serif;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+b {
+  font-weight: 500;
+}
+
+p {
+  margin: 0;
+}
+
+svg {
+  fill: currentColor;
+  vertical-align: top;
+  width: 100%;
+  height: 100%;
+}
+
+button {
+  border: 0;
+  font: inherit;
+  background: #f23807;
+  color: #fff;
+
+  font-size: 1.8rem;
+  padding: .75em 3.5em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0
+}
+
+
+
+.clearfix:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+/* Main Styles */
+
+header {
+  min-width: 1170px;
+  background: #2a2a2a;
+  /*background: #2a2a2a linear-gradient(160deg, transparent, transparent 80%, #f23807 80%, #f23807 90%, transparent 90%);*/
+  height: 629px; /* temp */
+}
+
+.header-content {
+  width: 1170px;
+  margin: 0 auto;
+  padding: 0 15px;
+  padding-top: 35px;
+  height: 100%; /* ? */
+}
+
+.logo {
+  font: 100 3.6rem/1 "Roboto", sans-serif;
+}
+
+.phone {
+  font: 500 1.8rem/1 "Roboto", sans-serif;
+  margin-bottom: 5px;
+}
+
+.header-content > .fc div:last-child {
+  align-self: flex-end;
+}
+
+nav {
+  margin-top: 30px;
+}
+
+nav ul {
+  margin: 0 -17px;
+}
+
+nav li {
+  margin: 0 17px;
+}
+
+nav a {
+  font: 1.8rem/1 "Roboto", sans-serif;
+}
+
+.top-bar-address {
+  text-align: right;
+  font: 100 1.8rem/2.4rem "Roboto", sans-serif;
+  margin-bottom: -3px;
+}
+
+.intro {
+  margin-top: 160px;
+  font: 400 2.4rem/1 "Roboto", sans-serif;
+}
+
+.intro h1 {
+  font: 500 4.8rem/1 "Roboto", sans-serif;
+}
+
+.intro .subheading {
+  margin-top: 20px;
+  margin-bottom: 45px;
+}
+
+.intro button {
+  margin-right: 32px;
+}
+
+.intro a {
+  display: inline-block;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #cbcbcb;
+  font-size: 1.8rem;
+  color: #cbcbcb;
+}
+
+
+
+/* Section 1 - Features */
+
+.features {
+  width: 1170px;
+  margin: 0 auto;
+  text-align: center;
+  color: #202020;
+  padding: 90px 0;
+}
+
+.features h1 {
+  font: 500 4.8rem/1 "Roboto", sans-serif;
+}
+
+.features .subheading {
+  font: 400 1.8rem/2.4rem "Roboto", sans-serif;
+  margin: 15px auto;
+  width: 66.66666667%;
+}
+
+.feature {
+  flex: 0 0 33.33333333%;
+  padding: 40px 15px 0;
+}
+
+.feature-icon {
+  height: 90px;
+  color: #f23807;
+}
+
+.feature-text {
+  font: 400 1.8rem/2.4rem "Roboto", sans-serif;
+}
+
+.feature-text h3 {
+  font: 500 2.4rem/1 "Roboto", sans-serif;
+  margin: 25px 0 10px;
+}

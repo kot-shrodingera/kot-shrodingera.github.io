@@ -1,0 +1,131 @@
+.colored-line,
+.colored-centered-line {
+  width: 68px;
+}
+
+.colored-line {
+  margin: 17px auto 30px 1px;
+}
+
+.colored-centered-line {
+  margin: 13px auto 10px;
+}
+
+header .content {
+  padding: 0 0 162px;
+}
+
+.logo-bar {
+  padding: 49px 15px 3px;
+}
+
+.logo-bar img {
+  margin-left: -3px;
+}
+
+.social li {
+  margin-left: 6px;
+}
+
+.intro .sub-heading {
+  font-size: 2rem;
+  margin: 23px 240px 0;
+}
+
+.intro-form {
+  margin: 67px auto 0;
+}
+
+.intro-form form {
+  padding: 25px 23px 22px 24px; 
+  height: 101px;
+}
+
+.intro-form input {
+  flex-basis: 217px;
+  height: 54px;
+  padding: 0 21px;
+}
+
+.intro-form button {
+  flex-basis: 184px;
+  height: 54px;
+}
+
+.form-sub-heading {
+  padding: 11px 261px 0;
+}
+
+.img-features .feature-list {
+  margin-top: -4px;
+}
+
+.img-features .feature-list li {
+  margin-top: 41px;
+}
+
+.img-features .feature-list li .box-icon {
+  margin: 5px 13px 0 0;
+  height: 33px; /* pp */
+}
+
+.img-features .feature-list .text {
+  width: calc(100% - 45px);
+}
+
+.img-features .feature-list .text p {
+  margin-top: 5px;
+}
+
+.section2 .content {
+  padding-top: 101px;
+}
+
+.feature-icon {
+  margin: 66px auto 11px;
+}
+
+.feature p {
+  margin-top: 13px;
+}
+
+.package-header {
+  padding: 15px 0 21px;
+}
+
+.price {
+  padding: 17px 38px 16px 30px;
+}
+
+.video {
+  margin: 74px auto 0;
+}
+
+.video-features {
+  margin: 42px auto -2px;
+}
+
+.section7 .content {
+  padding-bottom: 101px;
+}
+
+.feedbacks {
+  margin-top: 72px;
+  margin-bottom: -3px;
+}
+
+.feedbacks p {
+  padding: 45px 30px 31px;
+}
+
+.section8 .content {
+  padding: 134px 0 130px;
+}
+
+.section8 h2 {
+  margin: 9px 0 42px;
+}
+
+.section9 .content {
+  padding: 71px 0 75px;
+}

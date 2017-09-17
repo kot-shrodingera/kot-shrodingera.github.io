@@ -1,0 +1,639 @@
+@font-face {
+  font-family: "Geometria Medium";
+  src: url(../fonts/Geometria-Medium.otf);
+}
+
+@font-face {
+  font-family: "Geometria Bold";
+  src: url(../fonts/Geometria-Bold.otf);
+}
+
+@font-face {
+  font-family: "Geometria ExtraBold";
+  src: url(../fonts/Geometria-ExtraBold.otf);
+}
+
+@font-face {
+  font-family: "Geometria Heavy";
+  src: url(../fonts/Geometria-Heavy.otf);
+}
+
+/* Global and resets */
+
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;     /* 1rem = 10px */
+}
+
+body {
+  color: #fff;
+  margin: 0;
+  font: 300 1.6rem/1 "Roboto", sans-serif;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+p {
+  margin: 0;
+}
+
+svg {
+  fill: currentColor;
+  vertical-align: top;
+  width: 100%;
+  height: 100%;
+}
+
+button {
+  border: 0;
+  font: inherit;
+  background: #fff;
+  color: #0561a4;
+}
+
+button:hover, button:focus {
+  background: #9cccef !important;
+  color: #fff !important;
+  outline: none;
+}
+
+button:active {
+  background: #34a2f3 !important;
+  color: #fff !important;
+}
+
+button.disabled {
+  background: #9cccef !important;
+  color: #6cb3e7 !important;
+  cursor: default;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0
+}
+
+
+
+.clearfix:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+/* Main Styles */
+
+header {
+  min-width: 1170px;
+  background: url("../images/bg.jpg") center top no-repeat;
+  background-size: cover;
+  height: 725px; /* temp */
+}
+
+.header-content {
+  width: 1170px;
+  margin: 0 auto;
+  padding: 0 15px;
+  background: url("../images/dude.png") 80% bottom no-repeat;
+}
+
+.top-bar {
+  padding: 60px 0 0;
+  color: #fff;
+}
+
+.top-bar-logo {
+  font: 500 2rem/2.2rem "Geometria Medium", sans-serif;
+  float: left;
+  margin-right: 60px;
+  letter-spacing: 0.04em;
+}
+
+.top-bar-logo svg {
+  width: 22px;
+  height: 22px;
+  margin-right: 10px;
+}
+
+.top-bar-menu {
+  float: left;
+  font: 300 1.6rem/2.2rem "Roboto", sans-serif;
+}
+
+.top-bar-menu li {
+  margin-right: 30px;
+}
+
+.top-bar-phone {
+  font-size: 2rem;
+  float: right;
+  text-align: right;
+}
+
+.top-bar-phone b {
+  font-weight: 500;
+}
+
+.top-bar-phone .callback {
+  display: inline-block;
+  font-size: 1.6rem;
+  margin-top: 10px;
+  padding-bottom: 3px;
+  border-bottom: 1px solid #fff;
+}
+
+.intro {
+
+}
+
+.intro h1 {
+  font: 900 5rem/1 "Geometria Heavy", sans-serif;
+  text-transform: uppercase;
+  width: 500px;
+  margin-top: 132px;
+  letter-spacing: 0.06em;
+}
+
+.intro .description {
+  font: 300 2rem/2.5rem "Roboto", sans-serif;
+  margin-top: 25px;
+  width: 300px;
+}
+
+.intro button {
+  font-weight: 500;
+  margin: 50px 0 160px; 
+  border-radius: 1.5em;
+  padding: 1em 3em;
+}
+
+
+
+/* Price Menu */
+
+.price-menu.flex-container {
+  width: 1170px;
+  margin: 0 auto;
+  padding: 0 15px;
+  color: #000;
+  font-weight: 400;
+  margin-top: 130px;
+  flex-flow: row;
+  justify-content: flex-start;
+}
+
+.price-menu li {
+  padding-bottom: 4px;
+  cursor: pointer;
+  margin-right: 45px;
+}
+
+.price-menu li:hover {
+  color: #0561a4; 
+}
+
+.price-menu li.active {
+  color: #0561a4;
+  border-bottom: 1px solid #0561a4;
+}
+
+
+
+/* Price List */
+
+.price-list {
+  width: 1170px;
+  margin: 75px auto;
+  font-weight: 400;
+}
+
+.option-list {
+  color: #000;
+}
+
+.option-section {
+  margin-bottom: 60px;
+  padding-right: 30px;
+}
+
+.option-section:last-child {
+  margin-bottom: 0;
+}
+
+.option-section h3 {
+  font: 800 1.8rem/1 "Geometria ExtraBold", sans-serif;
+  margin-bottom: 33px;
+  text-transform: uppercase;
+  letter-spacing: 0.01em;
+}
+
+.option-line {
+  display: flex;
+  flex-flow: row;
+  line-height: 2.2rem;
+  margin-top: 15px;
+}
+
+.option-name {
+  margin-right: 5px;
+}
+
+.option-name svg {
+  width: 16px;
+  height: 16px;
+  margin-left: 10px;
+  color: #0561a4;
+  vertical-align: baseline;
+}
+
+.option-line .dots {
+  flex-grow: 1;
+  background-image: linear-gradient(to right, #000 6.25%, transparent 6.25%);
+  background-size: 10px 1px;
+  background-position: center bottom 4px;
+  background-repeat: repeat-x;
+  margin-right: 10px;
+}
+
+.option-price {
+  font: 700 1.8rem/2.2rem "Roboto", sans-serif;
+}
+
+/* Owl Carousel styles */
+
+.option-list.owl-theme .owl-nav.disabled+.owl-dots {
+  line-height: 0;
+  margin-top: 45px;
+  text-align: left;
+}
+
+.option-list.owl-theme .owl-dots .owl-dot span {
+  margin: 0 16px 0 0;
+}
+
+.option-list.owl-theme .owl-dots .owl-dot span {
+  background-color: #e4eef4;
+}
+
+.option-list.owl-theme .owl-dots .owl-dot.active span, .option-list.owl-theme .owl-dots .owl-dot:hover span {
+  background-color: #0561a4;
+}
+
+
+
+/* News block */
+
+.news-block {
+  position: relative;
+}
+
+.news {
+  background: url(../images/news-bg.png) center top no-repeat;
+  height: 426px;
+  padding: 45px 40px;
+  font: 300 1.6rem/1 "Roboto", sans-serif;
+}
+
+.news-date {
+  font-size: 1.4rem;
+}
+
+.news h2 {
+  font: 800 3rem/1 "Geometria ExtraBold", sans-serif;
+  margin-top: 65px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.news-decription {
+  line-height: 2.3rem;
+  margin-top: 20px;
+}
+
+.news button {
+  margin-top: 60px;
+  margin-right: 20px;
+  font-weight: 500;
+  border-radius: 1.5em;
+  padding: 1em 1.5em;
+}
+
+/* Owl Carousel styles */
+
+.news-block.owl-theme .owl-nav {
+  position: absolute;
+  top: 45px;
+  right: 55px;
+  margin: 0;
+}
+
+.news-block.owl-theme .owl-nav [class*=owl-] {
+  margin: 0;
+  border-bottom: 1px solid #fff;
+  background: none;
+  border-radius: 0;
+  padding: 5px;
+  transform-origin: center;
+}
+
+.news-block.owl-theme .owl-nav .owl-prev {
+  border-left: 1px solid #fff;
+  transform: rotate(45deg);
+  margin-right: 10px;
+}
+
+.news-block.owl-theme .owl-nav .owl-next {
+  border-right: 1px solid #fff;
+  transform: rotate(-45deg);
+}
+
+/* Principles */
+
+.principles {
+  background: rgba(35, 140, 216, .04);
+  color: #000;
+}
+
+.principles > .flex-container {
+  width: 1170px;
+  margin: 100px auto;
+}
+
+.principles .principles-header {
+  font: 800 2.8rem/1 "Geometria ExtraBold", sans-serif;
+  color: #0561a4;
+  text-transform: uppercase;
+  flex-wrap: nowrap;
+}
+
+.principles .principles-header div:first-child {
+  flex-shrink: 0;
+/*  max-width: 92px;*/
+}
+
+.principles .principles-header div:last-child {
+  line-height: 3.2rem;
+  letter-spacing: 0.01em;
+  padding: 27px 0 0 15px;
+}
+
+.principle.flex-container {
+  flex-wrap: nowrap;
+  padding: 30px 15px 0;
+  margin-bottom: 30px;
+}
+
+.principle svg {
+  width: 50px;
+  height: 50px;
+  flex-shrink: 0;
+  color: #0561a4;
+}
+
+.principle .principle-text {
+  margin-left: 20px;
+  font-weight: 400;
+  line-height: 2.3rem;
+}
+
+.principle .principle-text h4 {
+  font: 800 1.8rem/1 "Geometria ExtraBold", sans-serif;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  letter-spacing: 0.01em;
+}
+
+
+
+/* Doctors */
+
+.doctors {
+  color: #000;
+  position: relative;
+}
+
+.doctors > .flex-container {
+  margin: 130px auto 85px;
+  width: 1170px;
+}
+
+.doctors-list {
+  z-index: 1;
+}
+
+.doctors-list h1 {
+  font: 800 2.8rem/1 "Geometria ExtraBold", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.01em;
+}
+
+.doctors-list ul {
+  margin-top: 60px;
+}
+
+.doctors-list li {
+  margin-bottom: 26px;
+  cursor: pointer;
+  align-items: center;
+}
+
+.doctors-list li.active, .doctors-list li:hover {
+  color: #0561a4;
+}
+
+.doctors-list li div {
+  flex-grow: 1;
+  margin-left: 25px;
+  font-weight: 400;
+  font-size: 1.4rem;
+}
+
+.doctors-list li h5 {
+  font: 700 1.5rem/1 "Geometria Bold", sans-serif;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  letter-spacing: 0.01em;
+}
+
+.doctor-section {
+  background: rgba(35, 140, 216, .04);
+}
+
+.doctor-photo-container {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 0;
+}
+
+.doctor-photo {
+  background: url(../images/doc-bg-2.png) center bottom no-repeat;
+  height: 660px;
+  margin-right: 10%;
+}
+
+.doctor-description {
+  margin: 90px 0 45px;
+  padding: 0 90px 0 30px;
+  z-index: 1;
+}
+
+.doctor-description h3 {
+  font: 800 1.8rem/1 "Geometria ExtraBold", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.01em;
+}
+
+.doctor-scpec {
+  font: 400 1.4rem/1 "Roboto", sans-serif;
+  margin-top: 20px;
+}
+
+.doctor-info {
+  margin-top: 45px;
+  font-weight: 400;
+  line-height: 2.2rem;
+}
+
+.doctor-info p {
+  margin-bottom: 25px;
+}
+
+.doctor-description button {
+  font-weight: 500;
+  background: #0561a4;
+  border-radius: 1.5em;
+  padding: 1em 3em;
+  color: #fff;
+  margin: 25px 30px 0 0;
+}
+
+.doctor-description button:active {
+  background: #fff !important;
+  color: #0561a4 !important;
+}
+
+.doctor-description a {
+  font-weight: 400;
+  padding-bottom: 3px;
+  border-bottom: 1px solid #000;
+}
+
+.doctor-description a:visited, .doctor-description a:active, .doctor-description a:focus, .doctor-description a:hover {
+  color: #000;
+}
+
+
+
+/* Comments */
+
+.comments {
+  min-width: 1170px;
+  background: #0561a4;
+}
+
+.comments-content {
+  margin: 130px auto 110px;
+  width: 1170px;
+  padding: 0 15px;
+}
+
+.comments-content h2 {
+  font: 800 2.8rem/1 "Geometria ExtraBold", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.01em;
+}
+
+.comments-section {
+  margin-top: 60px;
+}
+
+.comment {
+  padding: 20px 40px 0 10px;
+  background: url(../svg/quote.svg) no-repeat;
+  line-height: 2.3rem;
+}
+
+.comment-author {
+  margin-top: 25px;
+  font-weight: 500;
+}
+
+/* Owl Carousel styles */
+
+.comments-block.owl-theme .owl-nav.disabled+.owl-dots {
+  line-height: 0;
+  margin-top: 90px;
+}
+
+.comments-block.owl-theme .owl-dots .owl-dot span {
+  margin: 0 16px 0 0;
+}
+
+.comments-block.owl-theme .owl-dots .owl-dot span {
+  background-color: #1172b9;
+}
+
+.comments-block.owl-theme .owl-dots .owl-dot.active span, .comments-block.owl-theme .owl-dots .owl-dot:hover span {
+  background-color: #e4eef4;
+}
+
+
+
+/* Footer */
+
+footer {
+  color: #000;
+}
+
+footer > .flex-container {
+  width: 1170px;
+  margin: 95px auto;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+footer > .flex-container b {
+  font-weight: 500;
+}
+
+footer svg {
+  width: 16px;
+  height: 16px;
+  color: #0561a4;
+  margin-right: 10px;
+}
+
+.footer-logo {
+  font: 500 2rem/2.2rem "Geometria Medium", sans-serif;
+  letter-spacing: 0.04em;
+  margin-right: auto;
+}
+
+.footer-logo svg {
+  width: 22px;
+  height: 22px;
+}
