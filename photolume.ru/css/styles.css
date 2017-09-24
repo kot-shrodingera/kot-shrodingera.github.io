@@ -1,16 +1,36 @@
 @font-face {
-  font-family: "Geometria Medium";
+  font-family: "Geometria";
   src: url(../fonts/Geometria-Medium.otf);
+  font-style: normal;
+  font-weight: 500; 
 }
 
 @font-face {
-  font-family: "Geometria Bold";
-  src: url(../fonts/Geometria-Bold.otf);
+  font-family: "Lato";
+  src: url(../fonts/Lato-Light.ttf);
+  font-style: normal;
+  font-weight: 300; 
 }
 
 @font-face {
-  font-family: "Geometria ExtraBold";
-  src: url(../fonts/Geometria-ExtraBold.otf);
+  font-family: "Lato";
+  src: url(../fonts/Lato-Regular.ttf);
+  font-style: normal;
+  font-weight: 400; 
+}
+
+@font-face {
+  font-family: "Lato";
+  src: url(../fonts/Lato-Bold.ttf);
+  font-style: normal;
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Lato";
+  src: url(../fonts/Lato-BoldItalic.ttf);
+  font-style: italic;
+  font-weight: 700; 
 }
 
 /* Global and resets */
@@ -93,15 +113,15 @@ section {
 }
 
 h1 {
-  font: 800 4.6rem/1 "Geometria ExtraBold", sans-serif;
+  font: 500 4.8rem/1 "Geometria", sans-serif;
 }
 
 h2 {
-  font: 700 4rem/1 "Geometria Bold", sans-serif;
+  font: 500 4rem/1 "Geometria", sans-serif;
 }
 
 h3 {
-  font: 700 2rem/1 "Geometria Bold", sans-serif;
+  font: 500 2rem/1 "Geometria", sans-serif;
 }
 
 .content {
@@ -117,7 +137,7 @@ h3 {
 header {
   /*min-width: 1170px;*/
   background: #fff;
-  background: linear-gradient(180deg, #fff, #eaeaea);
+  background: linear-gradient(to bottom, rgba(234,234,234,0.3), rgba(234,234,234,1));
 }
 
 header .content {
@@ -132,7 +152,7 @@ header .top-bar {
 }
 
 header .top-bar .logo {
-  font: 800 2rem/1 "Geometria ExtraBold", sans-serif;
+  font: 500 2rem/1 "Geometria", sans-serif;
 }
 
 header .top-bar nav {
@@ -150,12 +170,12 @@ header .top-bar .contacts {
 }
 
 header .top-bar .phone {
-  font: 400 1.8rem/2rem "Lato", sans-serif;
+  font: 400 2rem/1 "Lato", sans-serif;
   margin-bottom: 18px;
 }
 
 header .top-bar .phone b {
-  font-weight: 900;
+  font: 700 2rem/1 "Lato", sans-serif;
 }
 
 header .top-bar .address {
@@ -169,6 +189,7 @@ header .intro .text {
 }
 
 header .intro .gost {
+  letter-spacing: 2px;
   margin-left: -1px; /* hor-align kostyl */
 }
 
@@ -178,7 +199,7 @@ header .intro h1 {
 }
 
 header .intro ul {
-  margin: -10px 0 0;
+  margin: -10px 0 0 -2rem;
 }
 
 header .intro ul li {
@@ -191,7 +212,7 @@ header .intro button {
 }
 
 header .intro .image {
-  width: 50%;
+  margin-right: -28px;
   box-shadow: 11px 11px 22px 0px rgba(0, 0, 0, .25);
 }
 
@@ -205,8 +226,8 @@ header .intro .image {
 .faq {
   background: #fff;
   width: 1140px;
-  box-shadow: -100px 0 0 -85px #316fb5, 4px 4px 10px 0px rgba(0, 0, 0, .15);
-  padding: 80px 80px 50px;
+  box-shadow: -105px 0 0 -85px #316fb5, 4px 4px 10px 0px rgba(0, 0, 0, .15);
+  padding: 95px 80px 110px;
 }
 
 .faq h2 {
@@ -218,16 +239,20 @@ header .intro .image {
 }
 
 .faq .question {
-  flex-basis: calc(50% - 15px);
+  flex-basis: calc(50% - 10px);
   margin: 20px 0;
-  line-height: 2rem;
+  line-height: 2.2rem;
 }
 
 .faq .question h3 {
   margin-bottom: 30px;
 }
 
-.faq .question li {
+.faq .question ul {
+  margin-left: -2rem;
+}
+
+.faq .question ul li {
   margin-top: 20px;
   background-position: left 8px;
 }
@@ -240,26 +265,25 @@ header .intro .image {
 }
 
 .faq .blue-thing {
-  background: url("../images/blue-thing.png");
+  background: url("../images/krestik.svg") 1px 1px;
   width: 26px;
-  height: 107px;
   flex-shrink: 0;
 }
 
 .faq .gost-links .links {
   padding: 5px 0 5px 15px;
-  margin: -17px 0;
+  margin: -16px 0;
 }
 
 .faq .gost-links .links a {
   display: block;
-  margin: 17px 0;
+  margin: 16px 0;
 }
 
 /* Catalog */
 
 #catalog {
-  padding: 125px 0;
+  padding: 125px 0 210px;
 }
 
 .catalog .top-bar h2 {
@@ -329,7 +353,7 @@ header .intro .image {
 }
 
 .order .step .text {
-  padding-right: 65px;
+  padding-right: 45px;
 }
 
 .order .step h3 {
@@ -346,7 +370,7 @@ header .intro .image {
 }
 
 .order .step .desc {
-  padding-left: 19px;
+  padding-left: 20px;
   margin-top: 20px;
   line-height: 2.4rem;
 }
@@ -369,6 +393,7 @@ header .intro .image {
 }
 
 .serts h2 {
+  line-height: 4.6rem;
   margin-bottom: 40px;
 }
 
@@ -380,9 +405,8 @@ header .intro .image {
 }
 
 .serts .blue-thing {
-  background: url("../images/blue-thing2.png");
+  background: url("../images/krestik.svg") 1px 1px;
   width: 26px;
-  height: 90px;
   flex-shrink: 0;
 }
 
@@ -435,12 +459,13 @@ header .intro .image {
 }
 
 .comments .name {
-  font: 500 1.8rem/1 "Geometria Medium", sans-serif;
+  font: 500 1.8rem/1 "Geometria", sans-serif;
   margin: 10px 0;
 }
 
 .comments .company {
   font-size: 1.4rem;
+  font-weight: 300;
 }
 
 .comments .company a {
@@ -467,14 +492,19 @@ footer .content .fc > div {
 }
 
 footer .logo {
-  font: 700 2rem/1 "Geometria Bold", sans-serif;
+  font: 500 2rem/1 "Geometria", sans-serif;
   margin-bottom: 15px;
   height: 31px;
 }
 
+footer .logo img {
+  margin-top: -18px;
+}
+
 footer .logo + p {
   font-size: 1.4rem;
-  line-height: 2.2rem
+  font-weight: 300;
+  line-height: 2.2rem;
   margin-bottom: 30px;
 }
 
