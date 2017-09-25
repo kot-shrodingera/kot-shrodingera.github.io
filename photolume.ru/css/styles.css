@@ -134,6 +134,43 @@ h3 {
 
 /* Main Styles */
 
+/* Sticky Menu */
+
+.sticky-menu {
+  width: 100%;
+  position: fixed;
+  align-items: center;
+  padding: 15px 40px;
+  background: rgba(240, 240, 240, 0.9);
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2);
+  transition: all 0.5s;
+  top: 0;
+}
+
+.sticky-menu.hidden {
+  top: -100px;
+}
+
+.sticky-menu .logo {
+  font: 500 1.8rem/1 "Geometria", sans-serif;
+}
+
+.sticky-menu nav {
+  flex-grow: 1;
+  justify-content: center;
+}
+
+.sticky-menu nav > div {
+  margin: 0 25px;
+}
+
+.sticky-menu button {
+  font-size: 1.4rem;
+}
+
+
+/* Header */
+
 header {
   /*min-width: 1170px;*/
   background: #fff;
