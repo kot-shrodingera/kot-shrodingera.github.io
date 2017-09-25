@@ -101,11 +101,11 @@ li {
 
 button {
   border: 0;
-  font: 700 1.8rem/1 "Lato", sans-serif;
+  font: 400 1.8rem/1 "Lato", sans-serif;
   background: #0ab35b;
   color: #fff;
   padding: 1em 2em;
-  box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, .15);
+  box-shadow: 5px 5px 30px 0px rgba(0, 0, 0, .2);
 }
 
 section {
@@ -113,15 +113,15 @@ section {
 }
 
 h1 {
-  font: 500 4.8rem/1 "Geometria", sans-serif;
+  font: 600 4.8rem/1 "Geometria", sans-serif;
 }
 
 h2 {
-  font: 500 4rem/1 "Geometria", sans-serif;
+  font: 600 4rem/1 "Geometria", sans-serif;
 }
 
 h3 {
-  font: 500 2rem/1 "Geometria", sans-serif;
+  font: 600 2rem/1 "Geometria", sans-serif;
 }
 
 .content {
@@ -142,7 +142,7 @@ h3 {
   align-items: center;
   padding: 15px 40px;
   background: rgba(240, 240, 240, 0.9);
-  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2);
   transition: all 0.5s;
   top: 0;
 }
@@ -152,7 +152,7 @@ h3 {
 }
 
 .sticky-menu .logo {
-  font: 500 1.8rem/1 "Geometria", sans-serif;
+  font: 600 1.8rem/1 "Geometria", sans-serif;
 }
 
 .sticky-menu nav {
@@ -189,7 +189,7 @@ header .top-bar {
 }
 
 header .top-bar .logo {
-  font: 500 2rem/1 "Geometria", sans-serif;
+  font: 600 2rem/1 "Geometria", sans-serif;
 }
 
 header .top-bar nav {
@@ -236,11 +236,11 @@ header .intro h1 {
 }
 
 header .intro ul {
-  margin: -10px 0 0 -2rem;
+  margin: -15px 0 0 -2rem;
 }
 
 header .intro ul li {
-  margin: 10px 0;
+  margin: 15px 0;
   font-size: 1.8rem;
 }
 
@@ -250,7 +250,7 @@ header .intro button {
 
 header .intro .image {
   margin-right: -28px;
-  box-shadow: 11px 11px 22px 0px rgba(0, 0, 0, .25);
+  box-shadow: 8px 8px 30px 0px rgba(0, 0, 0, .3);
 }
 
 
@@ -263,7 +263,7 @@ header .intro .image {
 .faq {
   background: #fff;
   width: 1140px;
-  box-shadow: -105px 0 0 -85px #316fb5, 4px 4px 10px 0px rgba(0, 0, 0, .15);
+  box-shadow: -105px 0 0 -85px #316fb5, 5px 5px 30px 0px rgba(0, 0, 0, .2);
   padding: 95px 80px 110px;
 }
 
@@ -347,7 +347,7 @@ header .intro .image {
 }
 
 .catalog .item img {
-  box-shadow: 3px 3px 10px 0px rgba(0, 0, 0, .15);
+  box-shadow: 5px 5px 30px 0px rgba(0, 0, 0, .1);
 }
 
 .catalog .item.little img[src="images/item-la.jpg"] {
@@ -386,7 +386,7 @@ header .intro .image {
 }
 
 .order .step .icon img {
-  box-shadow: 3px 3px 10px 0px rgba(0, 0, 0, .15);
+  box-shadow: 3px 3px 15px 0px rgba(0, 0, 0, .1);
 }
 
 .order .step .text {
@@ -460,7 +460,7 @@ header .intro .image {
 
 .serts img {
   margin: 0 17.5px 0;
-  box-shadow: 4px 4px 10px 0 rgba(0, 0, 0, .15);
+  box-shadow: 5px 5px 30px 0 rgba(0, 0, 0, .1);
 }
 
 
@@ -496,7 +496,7 @@ header .intro .image {
 }
 
 .comments .name {
-  font: 500 1.8rem/1 "Geometria", sans-serif;
+  font: 600 1.8rem/1 "Geometria", sans-serif;
   margin: 10px 0;
 }
 
@@ -529,7 +529,7 @@ footer .content .fc > div {
 }
 
 footer .logo {
-  font: 500 2rem/1 "Geometria", sans-serif;
+  font: 600 2rem/1 "Geometria", sans-serif;
   margin-bottom: 15px;
   height: 31px;
 }
