@@ -68,6 +68,6 @@
     owlCarousel.trigger('to.owl.carousel', $(this).index());
   }
 
-  $('.top-bar-menu').localScroll()
+  $('.top-bar-menu').localScroll();
 
 })(jQuery);
