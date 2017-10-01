@@ -2,11 +2,12 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>photolume.ru</title>
 
   <link rel="stylesheet" href="css/layout.css">
   <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/responsive.css">
 </head>
 <body>
 
@@ -47,7 +48,8 @@
         <h1>Изготовление планов&nbsp;эвакуации в&nbsp;Казани</h1>
         <ul>
           <li>Срок изготовления — от 1 дня</li>
-          <li>Все необходимые сертификаты и лицензии</li>
+          <li class="desktop">Все необходимые сертификаты и лицензии</li>
+          <li class="mobile">Все необходимые документы</li>
           <li>Бесплатный выезд специалиста и доставка*</li>
         </ul>
         <button>Оставить заявку</button>
@@ -310,7 +312,7 @@
 <div class="modal hidden">
   <div class="modal-content">
     <div class="heading">Оформление заявки</div>
-    <form>
+    <div class="form">
       <input type="text" name="name" placeholder="Ваше имя">
       <input type="text" name="phone" placeholder="Номер телефона">
       <div class="subscribe">Подписка</div>
@@ -318,13 +320,19 @@
       <input type="text" name="e-mail" placeholder="E-mail (необязательно)">
       <button>Отправить заявку</button>
       <p class="politics">Нажимая на кнопку «Отправить», вы даете согласие на обработку персональных данных и соглашаетесь c <a href="">политикой конфиденциальности</a></p>
-    </form>
+    </div>
   </div>
 </div>
 
 <script src="js/jquery-3.2.1.min.js"></script>
 <script src="js/jquery.scrollTo-2.1.2.min.js"></script>
 <script src="js/jquery.localScroll-2.0.min.js"></script>
+<script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init("user_fbBg19dXVUB3vfvr6NguH");
+   })();
+</script>
 
 <script src="js/custom.js"></script>
 

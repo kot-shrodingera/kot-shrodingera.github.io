@@ -1,0 +1,80 @@
+@media (max-width: 480px) {
+
+  h1 {
+    font: 600 3.2rem/1 "Geometria", sans-serif;
+  }
+
+  h2 {
+    font: 600 2.8rem/1 "Geometria", sans-serif;
+  }
+
+  .content {
+    width: 320px;
+  }
+
+  header .content {
+    padding: 100px 0 35px;
+  }
+
+  header .top-bar {
+    display: none;
+  }
+
+  header .intro .image {
+    order: -1;
+    margin: 0;
+  }
+
+  header .intro .text {
+    margin-top: 45px;
+    width: 100%;
+  }
+
+  header .intro .gost {
+    letter-spacing: 1.5px;
+  }
+
+  header .intro h1 {
+    margin: 10px 0 20px -2px;
+  }
+
+  header .intro ul {
+    margin: 0 0 30px 0;
+  }
+
+  header .intro ul li {
+    font: 400 1.6rem/2.4rem "Lato", sans-serif;
+    background-position: left 8px;
+    padding-left: 16px;
+    margin: 10px 0;
+  }
+
+  header .intro ul li.desktop {
+    display: none;
+  }
+
+  header .intro ul li.mobile {
+    display: list-item;
+  }
+
+  header .intro button {
+    width: 100%;
+  }
+
+
+
+  #faq {
+    padding: 75px 0;
+  }
+
+  .faq {
+    box-shadow: none;
+    background: transparent;
+    padding: 0;
+  }
+
+  .faq h2 {
+    /*text-align: center;*/
+  }
+
+}
