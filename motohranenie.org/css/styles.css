@@ -52,9 +52,14 @@ button {
   font: inherit;
   background: #f23807;
   color: #fff;
+  border-radius: 3px;
 
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   padding: .75em 3.5em;
+}
+
+input:focus, button:focus {
+  outline: none;
 }
 
 h1,
@@ -66,89 +71,91 @@ h6 {
   margin: 0
 }
 
+h1 {
+  font: 500 4.4rem/6rem "Roboto", sans-serif;
+  text-transform: uppercase;
+}
 
+h2 {
+  font: 500 4.8rem/1 "Roboto", sans-serif;
+}
 
-.clearfix:after {
-  clear: both;
-  content: "";
-  display: table;
+h3 {
+  font: 500 2.4rem/1 "Roboto", sans-serif;
+}
+
+.content {
+  width: 1140px;
+  margin: 0 auto;
 }
 
 /* Main Styles */
 
 header {
   min-width: 1170px;
-  background: #2a2a2a;
+  background: url("../images/moto.png") left calc(50% - 300px) top calc(50% + 50px) no-repeat, radial-gradient(circle at left calc(50% - 300px) top calc(50% + 50px), #666, #2a2a2a 60%);
+  background-size: 500px, auto;
   /*background: #2a2a2a linear-gradient(160deg, transparent, transparent 80%, #f23807 80%, #f23807 90%, transparent 90%);*/
   height: 629px; /* temp */
 }
 
-.header-content {
-  width: 1170px;
-  margin: 0 auto;
-  padding: 0 15px;
+header .content {
   padding-top: 35px;
-  height: 100%; /* ? */
 }
 
-.logo {
+header .top-bar .logo {
   font: 100 3.6rem/1 "Roboto", sans-serif;
 }
 
-.phone {
+header .top-bar .phone {
   font: 500 1.8rem/1 "Roboto", sans-serif;
   margin-bottom: 5px;
 }
 
-.header-content > .fc div:last-child {
+header .top-bar div:last-child {
   align-self: flex-end;
 }
 
-nav {
-  margin-top: 30px;
+header nav {
+  margin: 30px -17px 0;
 }
 
-nav ul {
-  margin: 0 -17px;
-}
-
-nav li {
+header nav > div {
   margin: 0 17px;
 }
 
-nav a {
+header nav a {
   font: 1.8rem/1 "Roboto", sans-serif;
 }
 
-.top-bar-address {
+header .top-bar .address {
   text-align: right;
   font: 100 1.8rem/2.4rem "Roboto", sans-serif;
   margin-bottom: -3px;
 }
 
-.intro {
-  margin-top: 160px;
-  font: 400 2.4rem/1 "Roboto", sans-serif;
+
+
+header .intro {
+  margin-top: 130px;
+  font: 400 1.6rem/1 "Roboto", sans-serif;
+  width: calc(50% - 15px);
+  margin-left: auto;
 }
 
-.intro h1 {
-  font: 500 4.8rem/1 "Roboto", sans-serif;
-}
-
-.intro .subheading {
-  margin-top: 20px;
+header .intro .subheading {
+  margin-top: 10px;
   margin-bottom: 45px;
 }
 
-.intro button {
-  margin-right: 32px;
+header .intro button {
+  margin-right: 25px;
 }
 
-.intro a {
+header .intro a {
   display: inline-block;
   padding-bottom: 5px;
   border-bottom: 1px solid #cbcbcb;
-  font-size: 1.8rem;
   color: #cbcbcb;
 }
 
@@ -156,16 +163,10 @@ nav a {
 
 /* Section 1 - Features */
 
-.features {
-  width: 1170px;
-  margin: 0 auto;
+.features .content {
   text-align: center;
   color: #202020;
   padding: 90px 0;
-}
-
-.features h1 {
-  font: 500 4.8rem/1 "Roboto", sans-serif;
 }
 
 .features .subheading {
@@ -174,21 +175,151 @@ nav a {
   width: 66.66666667%;
 }
 
-.feature {
-  flex: 0 0 33.33333333%;
+.features .feature {
+  width: 33.33333333%;
   padding: 40px 15px 0;
 }
 
-.feature-icon {
-  height: 90px;
+.features .feature-icon {
+  height: 60px;
   color: #f23807;
 }
 
-.feature-text {
+.features .feature-text {
   font: 400 1.8rem/2.4rem "Roboto", sans-serif;
 }
 
-.feature-text h3 {
+.features .feature-text h3 {
   font: 500 2.4rem/1 "Roboto", sans-serif;
   margin: 25px 0 10px;
+}
+
+
+
+/* Gallery */
+
+.gallery {
+  background: #f5f5f5;
+}
+
+.gallery .content {
+  text-align: center;
+  color: #202020;
+  padding: 90px 0;
+}
+
+.gallery h2 {
+  margin-bottom: 30px;
+}
+
+.gallery .container {
+  margin: -15px;
+  height: 872px;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.gallery .container div:not(.fc) {
+  background: #ccc;
+}
+
+.gallery .container > div {
+  width: calc(33.33333333% - 30px);
+  height: calc(33.33333333% - 30px);
+}
+
+.gallery .container > div.x2 {
+  width: calc(66.66666667% - 30px);
+  height: calc(66.66666667% - 30px);
+}
+
+.gallery .container div.h2 {
+  height: calc(66.66666667% - 30px);
+  flex-flow: column;
+}
+
+.gallery .container div.h2 > div {
+  height: calc(50% - 15px);
+}
+
+
+
+/* PaO */
+
+.pao {
+  background: linear-gradient(0deg, rgba(72, 72, 72, .85), rgba(72, 72, 72, .85)), url("../images/bg.png");
+}
+
+.pao .content {
+  padding: 90px 0;
+}
+
+.pao .prices {
+  width: 50%;
+  padding: 0 15px;
+}
+
+.pao .prices h3 {
+  margin-bottom: 52px;
+}
+
+.pao .prices ul {
+  border-top: 1px solid rgba(255, 255, 255, .3);
+}
+
+.pao .prices li {
+  height: 80px;
+  border-bottom: 1px solid rgba(255, 255, 255, .3);
+  align-items: center;
+  font: 400 1.8rem/1 "PT Sans", sans-serif;
+}
+
+.pao .prices li .explain {
+  font-size: 1.4rem;
+  margin-top: 5px;
+}
+
+.pao .prices li .price {
+  height: 34px;
+  border: 2px solid #f23807;
+  border-radius: 3px;
+  line-height: 2rem;
+  padding: 5px 10px;
+}
+
+.pao .order {
+  width: calc(100% * 1/3);
+  padding: 0 15px;
+}
+
+.pao .order h3 {
+  margin-bottom: 30px;
+}
+
+.pao .order .fc > * {
+  width: calc(50% - 15px);
+}
+
+.pao .order label {
+  font: 400 1.6rem/1 "PT Sans", sans-serif;
+}
+
+.pao .order input {
+  width: 100%;
+  border: none;
+  border-radius: 3px;
+  height: 50px;
+  margin: 5px 0 15px;
+  padding: 15px;
+}
+
+.pao .order button {
+  width: 100%;
+  margin: 25px 0 20px;
+  height: 50px;
+}
+
+.pao .order .agreement {
+  font: 400 1.4rem/1 "PT Sans", sans-serif;
+  color: #9f9f9f;
 }
