@@ -1,7 +1,9 @@
-// (function ($) {
+(function ($) {
 
-//   "use strict";
+  "use strict";
 
+  $('input[name^="date"]').datepicker({
+    
+  });
 
-
-// })(jQuery);
+})(jQuery);
