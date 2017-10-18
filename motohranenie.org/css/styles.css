@@ -51,13 +51,20 @@ svg {
 button {
   border: 0;
   font: inherit;
-  background: linear-gradient(to bottom, #ff8400, #c9470d);
+  background: linear-gradient(#fba243, #ff8400 50%, #c9470d);
+  background-size: auto 200%;
+  background-position: 0 100%;
   color: #fff;
   border-radius: 3px;
   cursor: pointer;
+  transition: background .3s linear;
 
   font-size: 1.6rem;
   padding: .75em 2em;
+}
+
+button:hover {
+  background-position: 0 0;
 }
 
 input:focus, button:focus {
@@ -74,8 +81,9 @@ h6 {
 }
 
 h1 {
-  font: 500 4.8rem/6rem "Roboto", sans-serif;
+  font: 500 4.7rem/6rem "Roboto", sans-serif;
   text-transform: uppercase;
+  letter-spacing: .025em;
 }
 
 h2 {
@@ -101,12 +109,12 @@ header {
   min-width: 1170px;
   background: url("../images/moto.png") left calc(50% - 300px) top calc(50% + 50px) no-repeat, radial-gradient(circle at left calc(50% - 300px) top calc(50% + 50px), #666, #2a2a2a 60%);
   background-size: 500px, auto;
-  /*background: #2a2a2a linear-gradient(160deg, transparent, transparent 80%, #f23807 80%, #f23807 90%, transparent 90%);*/
   height: 629px; /* temp */
 }
 
 header .content {
   padding-top: 35px;
+  flex-flow: column;
 }
 
 header .top-bar .logo {
@@ -116,10 +124,6 @@ header .top-bar .logo {
 header .top-bar .phone {
   font: 2.4rem/1 "Roboto", sans-serif;
 }
-
-/*header .top-bar div:last-child {
-  align-self: flex-end;
-}*/
 
 header .top-bar {
   margin-bottom: 21px;
@@ -135,6 +139,11 @@ header nav > div {
 
 header nav a {
   font: 1.8rem/1 "Roboto", sans-serif;
+  transition: color linear .3s;
+}
+
+header nav a:hover {
+  color: #ff6600;
 }
 
 header .top-bar .address {
@@ -143,13 +152,10 @@ header .top-bar .address {
   margin-top: -6px;
 }
 
-
-
 header .intro {
-  margin-top: 100px;
+  margin-top: 79px;
   font: 400 1.6rem/1 "Roboto", sans-serif;
-  width: calc(50% + 15px);
-  margin-left: auto;
+  align-self: flex-end;
 }
 
 header .intro .subheading {
@@ -166,6 +172,12 @@ header .intro a {
   padding-bottom: 5px;
   border-bottom: 1px solid #cbcbcb;
   color: #cbcbcb;
+  transition: color .3s linear, border .3s linear;
+}
+
+header .intro a:hover {
+  color: #ff6600;
+  border-color: #ff6600;
 }
 
 
