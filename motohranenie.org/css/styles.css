@@ -54,6 +54,7 @@ button {
   background: linear-gradient(to bottom, #ff8400, #c9470d);
   color: #fff;
   border-radius: 3px;
+  cursor: pointer;
 
   font-size: 1.6rem;
   padding: .75em 2em;
@@ -109,20 +110,23 @@ header .content {
 }
 
 header .top-bar .logo {
-  font: 100 3.6rem/1 "Roboto", sans-serif;
+  font: 500 2.4rem/1 "Roboto", sans-serif;
 }
 
 header .top-bar .phone {
-  font: 500 1.8rem/1 "Roboto", sans-serif;
-  margin-bottom: 5px;
+  font: 2.4rem/1 "Roboto", sans-serif;
 }
 
-header .top-bar div:last-child {
+/*header .top-bar div:last-child {
   align-self: flex-end;
+}*/
+
+header .top-bar {
+  margin-bottom: 21px;
 }
 
 header nav {
-  margin: 30px -17px 0;
+  margin: 0 -17px 0;
 }
 
 header nav > div {
@@ -135,14 +139,14 @@ header nav a {
 
 header .top-bar .address {
   text-align: right;
-  font: 100 1.8rem/2.4rem "Roboto", sans-serif;
-  margin-bottom: -3px;
+  font: 1.8rem/3rem "Roboto", sans-serif;
+  margin-top: -6px;
 }
 
 
 
 header .intro {
-  margin-top: 130px;
+  margin-top: 100px;
   font: 400 1.6rem/1 "Roboto", sans-serif;
   width: calc(50% + 15px);
   margin-left: auto;
@@ -372,7 +376,7 @@ footer .logo {
 
 footer .contacts {
   width: calc(4/12 * 100%);
-  font: 400 1.8rem/1 "PT Sans", sans-serif;
+  font: 1.8rem/1 "PT Sans", sans-serif;
 }
 
 footer .contacts > p:first-child {
