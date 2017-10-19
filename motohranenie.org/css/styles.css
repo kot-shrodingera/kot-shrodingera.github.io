@@ -351,7 +351,7 @@ header .intro a:hover {
   color: #9f9f9f;
 }
 
-.pao .order .agreement span {
+.pao .order .agreement a {
   border-bottom: 1px solid #6c6c6d;
 }
 
