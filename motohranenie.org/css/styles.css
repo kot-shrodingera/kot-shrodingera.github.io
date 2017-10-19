@@ -379,13 +379,14 @@ footer .content > div:not(.social) {
 
 footer .social {
   width: 50px;
+  align-self: flex-start;
 }
 
-footer .social use {
+footer .social a {
   transition: color .3s linear;
 }
 
-footer .social use:hover {
+footer .social a:hover {
   color: #507299;
 }
 
