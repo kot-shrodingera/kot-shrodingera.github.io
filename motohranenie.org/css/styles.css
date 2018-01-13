@@ -94,6 +94,10 @@ h3 {
   font: 500 2.4rem/1 "Roboto", sans-serif;
 }
 
+html {
+  min-width: 1170px;
+}
+
 .content {
   width: 1140px;
   margin: 0 auto;
@@ -106,7 +110,6 @@ h3 {
 /* Main Styles */
 
 header {
-  min-width: 1170px;
   background: url("../images/moto.png") left calc(50% - 300px) top calc(50% + 50px) no-repeat, radial-gradient(circle at left calc(50% - 300px) top calc(50% + 50px), #666, #2a2a2a 60%);
   background-size: 500px, auto;
   height: 629px; /* temp */
