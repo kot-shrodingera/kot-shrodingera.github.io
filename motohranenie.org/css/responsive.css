@@ -1,0 +1,61 @@
+@media (max-width: 1170px) {
+
+  .content {
+    width: 768px;
+  }
+
+  button {
+    font-size: 1.4rem;
+  }
+
+  h1 {
+    font-size: 2.4rem;
+    line-height: 3rem;
+  }
+
+
+  header {
+    background: url(../images/moto.png) left calc(50% - (337px / 2) - 30px) top calc(100% - 45px) no-repeat, radial-gradient(circle at left calc(50% - 300px) top calc(50% + 50px), #666, #2a2a2a 60%);
+    background-size: 337px, auto;
+  }
+
+  header .content {
+    padding: 50px 0 103px;
+  }
+
+  header .top-bar:first-child {
+    align-items: flex-end;
+    margin-bottom: 18px;
+  }
+
+  header .top-bar .logo {
+    font-size: 1.8rem;
+  }
+
+  header nav a {
+    font-size: 1.4rem;
+  }
+
+  header .top-bar .phone {
+    font-size: 1.4rem;
+  }
+
+  header .top-bar .address {
+    font-size: 1.4rem;
+    line-height: 2rem;
+    margin-top: -1px;
+  }
+
+  header .intro {
+    margin-top: 22px;
+  }
+
+  header .intro a {
+    font-size: 1.4rem;
+  }
+
+  header .intro .subheading {
+    margin: 13px 0 30px;
+  }
+
+}
