@@ -290,6 +290,7 @@ header .intro a:hover {
 }
 
 .pao .prices li {
+  box-sizing: content-box;
   height: 80px;
   border-bottom: 1px solid rgba(255, 255, 255, .3);
   align-items: center;
@@ -306,7 +307,7 @@ header .intro a:hover {
   border: 2px solid #ff6600;
   border-radius: 3px;
   line-height: 2rem;
-  padding: 5px 10px;
+  padding: 5px 15px;
 }
 
 .pao .order {
@@ -324,6 +325,7 @@ header .intro a:hover {
 
 .pao .order label {
   font: 400 1.6rem/1 "PT Sans", sans-serif;
+  display: block;
 }
 
 .pao .order input {
@@ -347,12 +349,14 @@ header .intro a:hover {
 }
 
 .pao .order .agreement {
+  display: inline-block;
   font: 400 1.4rem/1 "PT Sans", sans-serif;
   color: #9f9f9f;
+  border-bottom: 1px solid #6c6c6d;
+  cursor: pointer;
 }
 
-.pao .order .agreement a {
-  border-bottom: 1px solid #6c6c6d;
+.pao .order .agreement span {
 }
 
 
@@ -373,13 +377,9 @@ footer .content {
   padding: 20px 0 40px;
 }
 
-footer .content > div:not(.social) {
-  padding: 19px 15px 0;
-}
-
 footer .social {
   width: 50px;
-  align-self: flex-start;
+  margin-top: 10px;
 }
 
 footer .social a {
@@ -391,7 +391,6 @@ footer .social a:hover {
 }
 
 footer .logo {
-  width: calc(3/12 * 100%);
   font-size: 2.4rem;
 }
 
@@ -400,7 +399,17 @@ footer .contacts {
   font: 1.8rem/1 "PT Sans", sans-serif;
 }
 
-footer .contacts > p:first-child {
+footer .contacts {
+  text-align: center;
+}
+
+footer .contacts > div {
+  display: inline-block;
+  margin: 0 auto;
+  text-align: left;
+}
+
+footer .contacts div > p:first-child {
   margin: 5px 0 25px;
 }
 

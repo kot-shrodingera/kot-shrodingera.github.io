@@ -1,61 +1,168 @@
-@media (max-width: 1170px) {
+@media (max-width: 1200px) {
 
   .content {
-    width: 768px;
+    width: 940px;
   }
 
   button {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
   }
 
   h1 {
-    font-size: 2.4rem;
-    line-height: 3rem;
+    font-size: 3.6rem;
+    line-height: 4.6rem;
   }
 
+  h2 {
+    font-size: 2.8rem;
+  }
 
   header {
-    background: url(../images/moto.png) left calc(50% - (337px / 2) - 30px) top calc(100% - 45px) no-repeat, radial-gradient(circle at left calc(50% - 300px) top calc(50% + 50px), #666, #2a2a2a 60%);
-    background-size: 337px, auto;
+    background: url(../images/moto.png) left calc(50% - 460px / 2 - 10px) top 145px no-repeat, radial-gradient(circle at left calc(50% - 460px / 2 - 10px) top calc(100% - 230px), #666, #2a2a2a 60%);
+    background-size: 460px, auto;
   }
 
   header .content {
-    padding-bottom: 103px;
+    padding-top: 30px;
+    padding-bottom: 140px;
   }
 
   header .top-bar:first-child {
-    align-items: flex-end;
-    margin-bottom: 18px;
+    align-items: baseline;
+    margin-bottom: 22px;
   }
 
   header .top-bar .logo {
-    font-size: 1.8rem;
+    font-size: 2rem;
+  }
+
+  header nav {
+    margin: 0 -14.5px;
   }
 
   header nav a {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
   }
 
   header .top-bar .phone {
-    font-size: 1.4rem;
+    font-size: 2rem;
+  }
+
+  header nav > div {
+    margin: 0 14.5px;
   }
 
   header .top-bar .address {
-    font-size: 1.4rem;
-    line-height: 2rem;
-    margin-top: -1px;
+    font-size: 1.6rem;
+    line-height: 3.1rem;
+    margin-top: -8px;
   }
 
   header .intro {
-    margin-top: 22px;
-  }
-
-  header .intro a {
-    font-size: 1.4rem;
+    margin-top: 73px;
   }
 
   header .intro .subheading {
-    margin: 13px 0 30px;
+    margin: 12px 0 30px;
+  }
+
+
+
+  .features .content {
+    padding: 65px 0 35px;
+  }
+
+  .features .subheading {
+    margin: 12px auto 0;
+  }
+
+  .features .feature {
+    width: 50%;
+    padding: 53px 25px 0;
+  }
+
+  .features .feature-icon {
+    height: 50px;
+  }
+
+  .features .feature-text {
+    line-height: 2.5rem;
+  }
+
+  .features .feature-text h3 {
+    margin-top: 15px;
+  }
+
+
+
+  .gallery .content {
+    padding: 65px 0;
+  }
+
+  .gallery h2 {
+    margin-bottom: 45px;
+  }
+
+  .gallery .container {
+    margin: -10px;
+  }
+
+  .gallery .container > div {
+    width: calc(33.33333333% - 20px);
+    height: calc(33.33333333% - 20px);
+  }
+
+  .gallery .container > div.x2 {
+    width: calc(66.66666667% - 20px);
+    height: calc(66.66666667% - 20px);
+  }
+
+  .gallery .container div.h2 {
+    height: calc(66.66666667% - 20px);
+    flex-flow: column;
+  }
+
+  .gallery .container div.h2 > div {
+    height: calc(50% - 10px);
+  }
+
+
+
+  .pao .content {
+    padding: 65px 0;
+  }
+
+  .pao .prices {
+    padding: 0 45px;
+  }
+
+  .pao .prices h3 {
+    margin-bottom: 44px;
+  }
+
+  .pao .order {
+    width: 50%;
+    padding: 0 45px;
+  }
+
+  .pao .order h3 {
+    margin-bottom: 20px;
+  }
+
+  .pao .order input {
+    margin: 7px 0 17px;
+  }
+
+  .pao .order button {
+    margin: 23px 0 17px;
+  }
+
+  #map {
+    height: 200px;
+  }
+
+  footer .content {
+    padding-bottom: 10px;
   }
 
 }
