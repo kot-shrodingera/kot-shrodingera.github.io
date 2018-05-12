@@ -1,4 +1,4 @@
-@media (max-width: 1200px) {
+@media (max-width: 1199px) {
 
   .content {
     width: 940px;
@@ -18,26 +18,16 @@
   }
 
   header {
-    background: url(../images/moto.png) left calc(50% - 460px / 2 - 10px) top 145px no-repeat, radial-gradient(circle at left calc(50% - 460px / 2 - 10px) top calc(100% - 230px), #666, #2a2a2a 60%);
-    background-size: 460px, auto;
+    background: url(../images/moto.png) left calc(50% - 482px/2 - 10px) bottom 50px no-repeat, radial-gradient(circle at left calc(50% - 482px/2 - 10px) center, #666, #2a2a2a 60%);
+    background-size: 482px, auto;
   }
 
   header .content {
-    padding-top: 30px;
-    padding-bottom: 140px;
-  }
-
-  header .top-bar:first-child {
-    align-items: baseline;
-    margin-bottom: 22px;
+    padding: 30px 0 140px;
   }
 
   header .top-bar .logo {
     font-size: 2rem;
-  }
-
-  header nav {
-    margin: 0 -14.5px;
   }
 
   header nav a {
@@ -48,45 +38,32 @@
     font-size: 2rem;
   }
 
-  header nav > div {
-    margin: 0 14.5px;
-  }
-
   header .top-bar .address {
     font-size: 1.6rem;
     line-height: 3.1rem;
-    margin-top: -8px;
-  }
-
-  header .intro {
-    margin-top: 73px;
   }
 
   header .intro .subheading {
-    margin: 12px 0 30px;
+    margin-bottom: 30px;
   }
 
 
 
   .features .content {
-    padding: 65px 0 35px;
+    padding: 65px 0;
   }
 
   .features .subheading {
-    margin: 12px auto 0;
+    margin: 10px auto 0;
   }
 
   .features .feature {
     width: 50%;
-    padding: 53px 25px 0;
+    padding: 55px 25px 0;
   }
 
   .features .feature-icon {
     height: 50px;
-  }
-
-  .features .feature-text {
-    line-height: 2.5rem;
   }
 
   .features .feature-text h3 {
@@ -137,7 +114,7 @@
   }
 
   .pao .prices h3 {
-    margin-bottom: 44px;
+    margin-bottom: 45px;
   }
 
   .pao .order {
@@ -146,15 +123,19 @@
   }
 
   .pao .order h3 {
-    margin-bottom: 20px;
+    margin-bottom: 22px;
   }
 
   .pao .order input {
-    margin: 7px 0 17px;
+    margin: 5px 0 15px;
   }
 
   .pao .order button {
-    margin: 23px 0 17px;
+    margin: 25px 0 15px;
+  }
+
+  .pao .order .fc > * {
+    width: calc(50% - 10px);
   }
 
   #map {
@@ -165,4 +146,96 @@
     padding-bottom: 10px;
   }
 
+}
+
+@media (max-width: 959px) {
+
+  .content {
+    width: 754px;
+  }
+
+  h1 {
+    font-size: 3rem;
+    line-height: 3.8rem;
+  }
+
+  header {
+    background: url(../images/moto.png) left calc(50% - 386px/2 - 7px) bottom 25px no-repeat, radial-gradient(circle at left calc(50% - 386px/2 - 7px) center, #666, #2a2a2a 60%);
+    background-size: 386px, auto;
+  }
+
+  header .content {
+    padding: 30px 0 80px;
+  }
+
+  header .top-bar .address {
+    line-height: 2.4rem;
+  }
+
+  header .intro {
+    margin-top: 40px;
+    width: calc(100% * 5/12 + 7px);
+  }
+
+  header .intro .subheading {
+    margin-top: 0;
+  }
+
+
+
+  .features .content {
+    padding-top: 60px 0;
+  }
+
+  .features .feature {
+    padding: 55px 15px 0;
+  }
+
+  .features .feature-text h3 {
+    font-size: 2rem;
+  }
+
+
+
+  .gallery .content {
+    padding: 60px 0;
+  }
+
+  .gallery h2 {
+    margin-bottom: 35px;
+  }
+
+  .gallery .container {
+    margin: -7px;
+  }
+
+  .gallery .container > div {
+    width: calc(33.33333333% - 14px);
+    height: calc(33.33333333% - 14px);
+  }
+
+  .gallery .container > div.x2 {
+    width: calc(66.66666667% - 14px);
+    height: calc(66.66666667% - 14px);
+  }
+
+  .gallery .container div.h2 {
+    height: calc(66.66666667% - 14px);
+    flex-flow: column;
+  }
+
+  .gallery .container div.h2 > div {
+    height: calc(50% - 7px);
+  }
+
+
+
+  .pao .content {
+    padding: 60px 0;
+  }
+
+  .pao .order .fc > * {
+    width: calc(50% - 7px);
+  }
+  
 }

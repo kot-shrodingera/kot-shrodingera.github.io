@@ -32,10 +32,6 @@ a {
   color: inherit;
 }
 
-b {
-  font-weight: 500;
-}
-
 p {
   margin: 0;
 }
@@ -43,28 +39,16 @@ p {
 svg {
   fill: currentColor;
   fill-rule: evenodd;
-  vertical-align: top;
-  width: 100%;
+  /*vertical-align: top;*/
+  /*width: 100%;*/
   height: 100%;
 }
 
 button {
   border: 0;
-  font: inherit;
-  background: linear-gradient(#fba243, #ff8400 50%, #c9470d);
-  background-size: auto 200%;
-  background-position: 0 100%;
-  color: #fff;
-  border-radius: 3px;
+  color: inherit;
   cursor: pointer;
-  transition: background .3s linear;
-
-  font-size: 1.6rem;
-  padding: .75em 2em;
-}
-
-button:hover {
-  background-position: 0 0;
+  font: inherit;
 }
 
 input:focus, button:focus {
@@ -80,8 +64,12 @@ h6 {
   margin: 0
 }
 
+
+
+/* Main Styles */
+
 h1 {
-  font: 500 4.7rem/6rem "Roboto", sans-serif;
+  font: 500 4.4rem/6rem "Roboto", sans-serif;
   text-transform: uppercase;
   letter-spacing: .025em;
 }
@@ -94,6 +82,12 @@ h3 {
   font: 500 2.4rem/1 "Roboto", sans-serif;
 }
 
+.fc {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
 .content {
   width: 1140px;
   margin: 0 auto;
@@ -103,15 +97,30 @@ h3 {
   background: #ff6600;
 }
 
-/* Main Styles */
+button {
+  background: linear-gradient(#fba243, #ff8400 50%, #c9470d);
+  background-size: auto 200%;
+  background-position: 0 100%;
+  border-radius: 3px;
+  font-size: 1.6rem;
+  transition: background .3s linear;
+}
+
+button:hover {
+  background-position: 0 0;
+}
+
+
+
+/* Header */
 
 header {
-  background: url("../images/moto.png") left calc(50% - 300px) top calc(50% + 50px) no-repeat, radial-gradient(circle at left calc(50% - 300px) top calc(50% + 50px), #666, #2a2a2a 60%);
-  background-size: 500px, auto;
+  background: url("../images/moto.png") left calc(50% - 573px/2 - 15px) bottom 25px no-repeat, radial-gradient(circle at left calc(50% - 573px/2 - 15px) center, #666, #2a2a2a 60%);
+  background-size: 573px, auto;
 }
 
 header .content {
-  padding: 35px 0 164px;
+  padding: 45px 0 170px;
   flex-flow: column;
 }
 
@@ -124,15 +133,16 @@ header .top-bar .phone {
 }
 
 header .top-bar {
-  margin-bottom: 21px;
+  align-items: baseline;
+  margin-bottom: 25px;
 }
 
 header nav {
-  margin: 0 -17px 0;
+  margin: 0 -15px 0;
 }
 
 header nav > div {
-  margin: 0 17px;
+  margin: 0 15px;
 }
 
 header nav a {
@@ -147,23 +157,23 @@ header nav a:hover {
 header .top-bar .address {
   text-align: right;
   font: 1.8rem/3rem "Roboto", sans-serif;
-  margin-top: -6px;
 }
 
 header .intro {
-  margin-top: 79px;
+  margin-top: 75px;
   font: 400 1.6rem/1 "Roboto", sans-serif;
   align-self: flex-end;
-  min-width: 50%;
+  width: 50%;
 }
 
 header .intro .subheading {
-  margin-top: 10px;
-  margin-bottom: 45px;
+  margin: 10px 0 45px;
   color: #d2d2d2;
 }
 
 header .intro button {
+  height: 40px;
+  width: 135px;
   margin-right: 25px;
 }
 
@@ -187,17 +197,17 @@ header .intro a:hover {
 .features .content {
   text-align: center;
   color: #202020;
-  padding: 90px 0;
+  padding: 80px 0;
 }
 
 .features .subheading {
   font: 400 1.8rem/2.4rem "Roboto", sans-serif;
   margin: 15px auto;
-  width: 66.66666667%;
+  width: calc(100% * 2/3);
 }
 
 .features .feature {
-  width: 33.33333333%;
+  width: calc(100% * 1/3);
   padding: 40px 15px 0;
 }
 
@@ -227,7 +237,7 @@ header .intro a:hover {
 .gallery .content {
   text-align: center;
   color: #202020;
-  padding: 90px 0;
+  padding: 80px 0;
 }
 
 .gallery h2 {
@@ -246,17 +256,17 @@ header .intro a:hover {
 }
 
 .gallery .container > div {
-  width: calc(33.33333333% - 30px);
-  height: calc(33.33333333% - 30px);
+  width: calc(100% * 1/3 - 30px);
+  height: calc(100% * 1/3 - 30px);
 }
 
 .gallery .container > div.x2 {
-  width: calc(66.66666667% - 30px);
-  height: calc(66.66666667% - 30px);
+  width: calc(100% * 2/3 - 30px);
+  height: calc(100% * 2/3 - 30px);
 }
 
 .gallery .container div.h2 {
-  height: calc(66.66666667% - 30px);
+  height: calc(100% * 2/3 - 30px);
   flex-flow: column;
 }
 
@@ -282,7 +292,7 @@ header .intro a:hover {
 }
 
 .pao .prices h3 {
-  margin-bottom: 52px;
+  margin-bottom: 50px;
 }
 
 .pao .prices ul {
@@ -316,7 +326,7 @@ header .intro a:hover {
 }
 
 .pao .order h3 {
-  margin-bottom: 30px;
+  margin-bottom: 29px;
 }
 
 .pao .order .fc > * {
@@ -354,9 +364,6 @@ header .intro a:hover {
   color: #9f9f9f;
   border-bottom: 1px solid #6c6c6d;
   cursor: pointer;
-}
-
-.pao .order .agreement span {
 }
 
 
