@@ -134,8 +134,8 @@
 @media (max-width: 959px) {
 
   .content {
-  --content-width: 754px;
-    width: 754px;
+  --content-width: 720px;
+    width: 720px;
   }
 
   h1 {
@@ -172,7 +172,7 @@
   }
 
   .features .feature {
-    padding: 55px 15px 0;
+    padding: 55px 7px 0;
   }
 
   .features .feature-text h3 {
