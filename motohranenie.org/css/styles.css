@@ -8,6 +8,7 @@
 
 html {
   font-size: 62.5%;     /* 1rem = 10px */
+  min-width: 450px;
 }
 
 body {
@@ -39,7 +40,7 @@ p {
 svg {
   fill: currentColor;
   fill-rule: evenodd;
-  /*vertical-align: top;*/
+  vertical-align: top;
   /*width: 100%;*/
   height: 100%;
 }
@@ -89,6 +90,7 @@ h3 {
 }
 
 .content {
+--content-width: 1140px;
   width: 1140px;
   margin: 0 auto;
 }
@@ -122,6 +124,12 @@ header {
 header .content {
   padding: 45px 0 170px;
   flex-flow: column;
+}
+
+header .top-bar .burger {
+  display: none;
+  height: 20px;
+  width: 50px;
 }
 
 header .top-bar .logo {
@@ -232,6 +240,7 @@ header .intro a:hover {
 
 .gallery {
   background: #f5f5f5;
+  overflow-x: hidden;
 }
 
 .gallery .content {
@@ -244,34 +253,30 @@ header .intro a:hover {
   margin-bottom: 30px;
 }
 
-.gallery .container {
-  margin: -15px;
-  height: 872px;
-  justify-content: space-around;
-  align-items: center;
+.gallery .grid {
+  display: grid;
+  grid-gap: 30px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 256px;
 }
 
-.gallery .container div:not(.fc) {
+.gallery .grid div {
   background: #ccc;
 }
 
-.gallery .container > div {
-  width: calc(100% * 1/3 - 30px);
-  height: calc(100% * 1/3 - 30px);
+.gallery .grid .x2 {
+  grid-column-start: span 2;
+  grid-row-start: span 2;
 }
 
-.gallery .container > div.x2 {
-  width: calc(100% * 2/3 - 30px);
-  height: calc(100% * 2/3 - 30px);
+.gallery .owl-stage-outer {
+  overflow: visible;
 }
 
-.gallery .container div.h2 {
-  height: calc(100% * 2/3 - 30px);
-  flex-flow: column;
-}
-
-.gallery .container div.h2 > div {
-  height: calc(50% - 15px);
+.gallery .owl-carousel .item {
+  height: 230px;
+  width: calc(var(--content-width) * 8/12);
+  background: #ccc;
 }
 
 
@@ -374,6 +379,8 @@ header .intro a:hover {
   height: 300px;
 }
 
+
+
 /* Footer */
 
 footer {
@@ -382,11 +389,17 @@ footer {
 
 footer .content {
   padding: 20px 0 40px;
+  flex-flow: row wrap;
+  align-items: baseline;
 }
 
-footer .social {
+footer .content > * {
+  width: calc(100% * 1/3);
+  font: 1.8rem/1 "PT Sans", sans-serif;
+}
+
+footer .social svg {
   width: 50px;
-  margin-top: 10px;
 }
 
 footer .social a {
@@ -401,23 +414,20 @@ footer .logo {
   font-size: 2.4rem;
 }
 
-footer .contacts {
-  width: calc(4/12 * 100%);
-  font: 1.8rem/1 "PT Sans", sans-serif;
-}
-
-footer .contacts {
-  text-align: center;
-}
-
-footer .contacts > div {
-  display: inline-block;
-  margin: 0 auto;
+footer .logo, footer .social {
   text-align: left;
 }
 
-footer .contacts div > p:first-child {
-  margin: 5px 0 25px;
+footer .address1, footer .address2 {
+  text-align: center;
+}
+
+footer .mail, footer .phone {
+  text-align: right;
+}
+
+footer .address2, footer .phone {
+  align-self: center;
 }
 
 
