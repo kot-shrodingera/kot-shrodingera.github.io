@@ -248,6 +248,9 @@
     top: 0;
     bottom: 0;
     left: -200px;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
     flex-flow: column;
     justify-content: flex-start;
     margin: 0;
