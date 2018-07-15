@@ -248,7 +248,7 @@
     top: 0;
     left: -200px;
     flex-flow: column;
-    justify-content: space-around;
+    justify-content: flex-start;
     margin: 0;
     padding-top: 15px;
     background: black;
@@ -260,6 +260,10 @@
 
   header nav.visible {
     left: 0;
+  }
+
+  header nav > div {
+    margin: 15px;
   }
 
   header nav .social {
