@@ -246,13 +246,13 @@
     position: fixed;
     z-index: 999;
     top: 0;
+    bottom: 0;
     left: -200px;
     flex-flow: column;
     justify-content: flex-start;
     margin: 0;
     padding-top: 15px;
     background: black;
-    height: 100%;
     width: 200px;
     transition: left linear .3s;
     background: #2a2a2a;
