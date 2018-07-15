@@ -1,6 +1,6 @@
 (function ($) {
 
-  "use strict";
+  'use strict';
 
   $('input[name^="date"]').datepicker({});
 
@@ -14,13 +14,23 @@
   $('.pao .order input[name="phone"]').mask('+7 (999) 999-99-99');
 
   if (matchMedia) {
-    const mq = window.matchMedia("(max-width: 765px)");
+    const mq = window.matchMedia('(max-width: 765px)');
     mq.addListener(WidthChange);
     WidthChange(mq);
   }
 
   function WidthChange(mq) {
     if (mq.matches) {
+      $('header .burger').click(function(e) {
+        e.stopPropagation();
+        $('header nav').addClass('visible');
+        $(document).on('click.nav', function(e) {
+          if (!$(e.target).closest('header nav').length) {
+              $('header nav').removeClass('visible');
+              $(document).off('click.nav');
+          }
+        });
+      });
       $('.gallery .container').removeClass('grid');
       $('.gallery .container').addClass('owl-carousel owl-theme');
       $('.owl-carousel').owlCarousel({

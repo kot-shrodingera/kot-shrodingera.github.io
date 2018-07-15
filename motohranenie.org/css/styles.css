@@ -95,6 +95,10 @@ h3 {
   margin: 0 auto;
 }
 
+.xs {
+  display: none;
+}
+
 *::selection {
   background: #ff6600;
 }
@@ -146,6 +150,9 @@ header .top-bar {
 }
 
 header nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   margin: 0 -15px 0;
 }
 
