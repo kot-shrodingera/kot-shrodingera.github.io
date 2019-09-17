@@ -390,7 +390,7 @@ header {
 }
 
 .principles .principles-header div:first-child {
-  flex-shrink: 0;
+  /*flex-shrink: 0;*/
 /*  max-width: 92px;*/
 }
 

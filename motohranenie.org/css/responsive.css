@@ -19,7 +19,7 @@
   }
 
   header {
-    background: url(../images/moto.png) left calc(50% - 482px/2 - 10px) bottom 50px no-repeat, radial-gradient(circle at left calc(50% - 482px/2 - 10px) center, #666, #2a2a2a 60%);
+    background: url(../images/moto.png) left calc(50% - 482px/2 - 10px) bottom 50px no-repeat, radial-gradient(circle at calc(50% - 482px/2 - 10px) center, #666, #2a2a2a 60%);
     background-size: 482px, auto;
   }
 
@@ -144,7 +144,7 @@
   }
 
   header {
-    background: url(../images/moto.png) left calc(50% - 386px/2 - 7px) bottom 25px no-repeat, radial-gradient(circle at left calc(50% - 386px/2 - 7px) center, #666, #2a2a2a 60%);
+    background: url(../images/moto.png) left calc(50% - 386px/2 - 7px) bottom 25px no-repeat, radial-gradient(circle at calc(50% - 386px/2 - 7px) center, #666, #2a2a2a 60%);
     background-size: 386px, auto;
   }
 
@@ -227,7 +227,7 @@
   }
 
   header {
-    background: radial-gradient(circle at left calc(50% - 175px) center, #666, #2a2a2a 60%);
+    background: radial-gradient(circle at calc(50% - 175px) center, #666, #2a2a2a 60%);
     position: relative;
   }
 
@@ -324,7 +324,7 @@
 
 
   .pao {
-    background: radial-gradient(circle at left calc(50% - 175px) top 300px, #666, #2a2a2a 60%);
+    background: radial-gradient(circle at calc(50% - 175px) top 300px, #666, #2a2a2a 60%);
   }
 
   .pao .content {
